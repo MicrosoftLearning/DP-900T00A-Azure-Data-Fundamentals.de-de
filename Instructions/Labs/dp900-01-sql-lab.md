@@ -2,18 +2,13 @@
 lab:
   title: Einführung in Azure SQL-Datenbank
   module: Explore relational data in Azure
-ms.openlocfilehash: b2c36b02f753250a58e4447624d98e5fdddcd675
-ms.sourcegitcommit: 1117342052bce0bbd5a703bd1f763862b9129807
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140682535"
 ---
+
 ## <a name="explore-azure-sql-database"></a>Einführung in Azure SQL-Datenbank
 
 In dieser Übung stellen Sie eine Azure SQL-Datenbankressource in Ihrem Azure-Abonnement bereit und verwenden dann SQL, um die Tabellen in einer relationalen Datenbank abzufragen.
 
-> **Hinweis:** Die Übung ist Teil eines Moduls in Microsoft Learn und enthält eine Option zum Verwenden eines *Azure-Sandboxabonnements*. Wenn Sie diese Übung jedoch im Rahmen von Präsenzunterricht absolvieren, sollten Sie das als Teil des Kurses bereitgestellte Azure-Abonnement anstelle der Sandbox verwenden.
+> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The exercise is part of a module on Microsoft Learn, and includes an option to use a <bpt id="p2">*</bpt>sandbox<ept id="p2">*</ept> Azure subscription. However, if you are completing this exercise as part of an instructor-led class, you should use the Azure subscription provided as part of the class instead of the sandbox.
 
 Verwenden Sie den folgenden Link, um die Übung in Microsoft Learn zu öffnen.
 

@@ -2,18 +2,12 @@
 lab:
   title: Einführung in Azure Cosmos DB
   module: Explore non-relational data in Azure
-ms.openlocfilehash: 9e28f91e86b68d35665dc0dfb79a2dd57d75a9ea
-ms.sourcegitcommit: 1117342052bce0bbd5a703bd1f763862b9129807
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140682525"
 ---
 ## <a name="explore-azure-cosmos-db"></a>Einführung in Azure Cosmos DB
 
 In dieser Übung stellen Sie eine Azure Cosmos DB-Datenbank in Ihrem Azure-Abonnement bereit und erkunden die verschiedenen Möglichkeiten, es zum Speichern nicht rationaler Daten zu verwenden.
 
-> **Hinweis:** Die Übung ist Teil eines Moduls in Microsoft Learn und enthält eine Option zum Verwenden eines *Azure-Sandboxabonnements*. Wenn Sie diese Übung jedoch im Rahmen von Präsenzunterricht absolvieren, sollten Sie das als Teil des Kurses bereitgestellte Azure-Abonnement anstelle der Sandbox verwenden.
+> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The exercise is part of a module on Microsoft Learn, and includes an option to use a <bpt id="p2">*</bpt>sandbox<ept id="p2">*</ept> Azure subscription. However, if you are completing this exercise as part of an instructor-led class, you should use the Azure subscription provided as part of the class instead of the sandbox.
 
 Verwenden Sie den folgenden Link, um die Übung in Microsoft Learn zu öffnen.
 

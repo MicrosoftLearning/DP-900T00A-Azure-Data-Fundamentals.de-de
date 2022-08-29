@@ -2,18 +2,13 @@
 lab:
   title: Visualisieren von Daten mit Power BI
   module: Explore data analytics in Azure
-ms.openlocfilehash: a071cc523235111930cd5af4840a229bcd6eacde
-ms.sourcegitcommit: e214701a109b7a9395ad74cfa5672b471afff2c5
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "140688133"
 ---
+
 ## <a name="visualize-data-with-power-bi"></a>Visualisieren von Daten mit Power BI
 
 In dieser Übung verwenden Sie Microsoft Power BI Desktop, um ein Datenmodell und einen Bericht mit interaktiven Datenvisualisierungen zu erstellen.
 
-> **Hinweis:** Die Übung ist Teil eines Moduls auf Microsoft Learn und erfordert einen Windows PC. Wenn Sie an einer Präsenzschulung teilnehmen, sollte ein virtueller Computer mit Windows bereitgestellt werden.
+> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The exercise is part of a module on Microsoft Learn, and requires a Windows PC. If you are attending an instructor-led course, a virtual machine running Windows should be provided.
 
 Verwenden Sie den folgenden Link, um die Übung in Microsoft Learn zu öffnen.
 
