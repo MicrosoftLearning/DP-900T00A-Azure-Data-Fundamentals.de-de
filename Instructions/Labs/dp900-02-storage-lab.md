@@ -21,8 +21,8 @@ Der erste Schritt bei der Verwendung von Azure Storage ist die Bereitstellung ei
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com?azure-portal=true) an, falls Sie dies noch nicht getan haben.
 1. On the Azure portal home page, select <bpt id="p1">**</bpt>&amp;#65291; Create a resource<ept id="p1">**</ept> from the upper left-hand corner and search for <bpt id="p2">*</bpt>Storage account<ept id="p2">*</ept>. Then in the resulting <bpt id="p1">**</bpt>Storage account<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
 1. Geben Sie auf der Seite **Erstellen eines Speicherkontos** die folgenden Werte ein:
-    - <bpt id="p1">**</bpt>Subscription<ept id="p1">**</ept>: If you're using a sandbox, select <bpt id="p2">*</bpt>Concierge Subscription<ept id="p2">*</ept>. Otherwise, select your Azure subscription.
-    - **Ressourcengruppe**: Wenn Sie eine Sandbox verwenden, wählen Sie die vorhandene Ressourcengruppe aus (mit einem ähnlichen Namen wie *learn-xxxx....* ). Erstellen Sie andernfalls eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
+    - **Abonnement**: Wählen Sie Ihr Azure-Abonnement.
+    - **Ressourcengruppe:** Erstellen Sie eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
     - **Speicherkontoname**: Geben Sie einen eindeutigen Namen für Ihr Speicherkonto mit Kleinbuchstaben und Zahlen ein.
     - **Region**: Wählen Sie einen beliebigen verfügbaren Standort aus.
     - **Leistung**: *Standard*
@@ -48,7 +48,7 @@ Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Conta
 1. Wählen Sie auf der Seite des Speicherbrowsers **Blobcontainer** aus, und überprüfen Sie, ob Ihr Container **data** aufgeführt ist.
 1. Wählen Sie den Container **data** aus, und beachten Sie, dass er leer ist.
 1. Wählen Sie **&#65291; Verzeichnis hinzufügen** aus, und lesen Sie die Informationen zu Ordnern, bevor Sie ein neues Verzeichnis namens **products** erstellen.
-1. Überprüfen Sie im Speicher-Explorer, ob in der aktuellen Ansicht der Inhalt des soeben erstellten Ordners **products** angezeigt wird. Beachten Sie, dass die „Breadcrumbs“ oben auf der Seite den Pfad **Blobcontainer > data > products** widerspiegeln.
+1. Überprüfen Sie im Speicherbrowser, ob in der aktuellen Ansicht der Inhalt des soeben erstellten Ordners **products** angezeigt wird. Beachten Sie, dass die „Breadcrumbs“ oben auf der Seite den Pfad **Blobcontainer > data > products** widerspiegeln.
 1. Wählen Sie in den Breadcrumbs **Daten** aus, um zum Container **data** zu wechseln, und beachten Sie, dass er <u>keinen</u> Ordner namens **products** enthält.
 
     Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the <bpt id="p1">**</bpt>products<ept id="p1">**</ept> folder contained no blobs, it isn't really there!
@@ -68,11 +68,11 @@ Azure Data Lake Store Gen2 support enables you to use hierarchical folders to or
 
 1. Laden Sie die JSON-Datei [product2.json](https://aka.ms/product2.json?azure-portal=true) von `https://aka.ms/product2.json` herunter, und speichern Sie sie auf Ihrem Computer in dem Ordner, in den Sie zuvor **product1.json** heruntergeladen haben. Sie laden sie später in Blob Storage hoch.
 1. Scrollen Sie im Azure-Portal auf der Seite Ihres Speicherkontos links nach unten zum Abschnitt **Einstellungen**, und wählen Sie **Data Lake Gen2-Upgrade** aus.
-1. Wählen Sie auf der Startseite des Azure-Portals links oben **&#65291; Ressource erstellen** aus, und suchen Sie nach *Speicherkonto*.
+1. In the ****Data Lake Gen2 upgrade**** page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.
 1. Wenn das Upgrade abgeschlossen ist, wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus, und navigieren Sie zurück zum Stamm Ihres Blobcontainers **data**, der weiterhin den Ordner **product_data** enthält.
 1. Wählen Sie den Ordner **product_data** aus, und vergewissern Sie sich, dass er noch die Datei **product1.json** enthält, die Sie zuvor hochgeladen haben.
 1. Verwenden Sie die Schaltfläche **&#10514; Hochladen**, um den Bereich **Blob hochladen** zu öffnen.
-1. Wählen Sie dann auf der resultierenden Seite **Speicherkonto** die Option **Erstellen** aus.
+1. Wählen Sie auf der Startseite des Azure-Portals links oben **&#65291; Ressource erstellen** aus, und suchen Sie nach *Speicherkonto*.
 1. Schließen Sie den Bereich **Blob hochladen**, wenn er noch geöffnet ist, und überprüfen Sie, ob ein Ordner **product_data** jetzt die Datei **product2.json** enthält.
 1. Wählen Sie auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
 1. Öffnen Sie den Container **data**, und überprüfen Sie, ob der Ordner **product_data** aufgeführt ist, den Sie erstellt haben.
@@ -86,7 +86,7 @@ Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Dateifreigaben** aus.
 1. Wählen Sie auf der Seite „Dateifreigaben“ die Option **&#65291; Dateifreigabe** aus, und fügen Sie mithilfe der Ebene **Transaktion optimiert** eine neue Dateifreigabe namens **files** hinzu.
 1. Öffnen Sie ihre neue Freigabe **files** in den **Dateifreigaben**.
-1. At the top of the page, select <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>. Then in the <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept> pane, note that there are tabs for common operating systems (Windows, Linux, and macOS) that contain scripts you can run to connect to the shared folder from a client computer.
+1. Wählen Sie dann auf der resultierenden Seite **Speicherkonto** die Option **Erstellen** aus.
 1. Schließen Sie den Bereich **Verbinden** und dann die Seite **files**, um zur Seite **Dateifreigaben** für Ihr Azure-Speicherkonto zurückzukehren.
 
 ## <a name="explore-azure-tables"></a>Erkunden von Azure Tables
