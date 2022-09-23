@@ -1,15 +1,16 @@
-# DP-900-Lab-Zuordnung für Kursleiter
+# <a name="dp-900-trainer-lab-mapping"></a>DP-900-Lab-Zuordnung für Kursleiter
 
-Dieser Kurs, DP-900: Grundlagen zu Microsoft Azure Data, umfasst eine Reihe von Labs, die für Präsenzschulungen vorgesehen sind. 
+Dieser Kurs, DP-900: Microsoft Azure Data Fundamentals, enthält verschiedene Labs für Präsenzschulungen. 
 
-> Hinweis: Kursleiter können die Kursteilnehmer auffordern, ein oder mehrere Labs eigenständig abzuschließen, indem sie die Übungen in den zugehörigen Learn-Lernpfaden nutzen (https://docs.microsoft.com/users/23110622/collections/0kjyh8rn5gdrjj). 
+> Hinweis: Kursleiter können Studierende bitten, ein oder mehrere Übungen zu ihrer eigenen Zeit abzuschließen, indem Sie die Übungen in den zugehörigen Lernpfaden verwenden (https://docs.microsoft.com/users/23110622/collections/0kjyh8rn5gdrjj). 
 
-## Zuordnung von DP-900-Modulen zu Labs
+## <a name="dp-900-module-mapping-to-labs"></a>Zuordnung von DP-900-Modulen zu Labs
 
-| DP-900-Lab für Kursleiter | Thema | Markdowndatei |
+| Modul | Labor | Markdowndatei |
 | --- | --- | --- |
-| 01: DP-900, Modul 02 | Bereitstellung relationaler Azure-Datenbankdienste | [01-Bereitstellung-relationaler-Azure-Datenbankdienste](https://github.com/MicrosoftLearning/DP-900DE-Microsoft-Azure-Data-Fundamentals/blob/master/Instructions/01-Provision-Azure-relational-database-services.md) |
-| 02: DP-900, Modul 02 | Verwendung von SQL für Abfragen der Azure-SQL-Datenbank. | [02-Use-SQL-to-query-Azure-SQL-Database.md](https://github.com/MicrosoftLearning/DP-900DE-Microsoft-Azure-Data-Fundamentals/blob/master/Instructions/02-Use-SQL-to-query-Azure-SQL-Database.md) |
-| 03: DP-900, Modul 03 | Bereitstellung nicht relationaler Azure-Datendienste  | [03-Bereitstellung-nicht-relationaler-Azure-Datendienste](https://github.com/MicrosoftLearning/DP-900DE-Microsoft-Azure-Data-Fundamentals/blob/master/Instructions/03-Provision-non-relational-Azure-data-services.md) |
-| 04: DP-900, Modul 03 | Daten in einem nicht relationalen Datenspeicher hochladen, herunterladen und abfragen | [04-Daten-in-einem-nicht-relationalen-Datenspeicher-hochladen,-herunterladen-und-abfragen.md](https://github.com/MicrosoftLearning/DP-900DE-Microsoft-Azure-Data-Fundamentals/blob/master/Instructions/04-Upload-download-and-query-data-in-a-non-relational-data-store.md) |
-
+| 02: Untersuchen von relationalen Daten in Azure | Einführung in Azure SQL-Datenbank | [dp900-01-sql-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-01-sql-lab.md) |
+| 03: Untersuchen nicht relationaler Daten in Azure | Erkunden von Azure Storage | [dp900-02-storage-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-02-storage-lab.md) |
+| 03: Untersuchen nicht relationaler Daten in Azure| Einführung in Azure Cosmos DB  | [dp900-03-cosmos-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-03-cosmos-lab.md) |
+| 04: Erkunden der Datenanalyse in Azure | Erkunden von Azure Synapse Analytics | [dp900-04-synapse-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-04-synapse-lab.md) |
+| 04: Erkunden der Datenanalyse in Azure | Erkunden von Azure Stream Analytics | [dp900-05-stream-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-05-stream-lab.md) |
+| 04: Erkunden der Datenanalyse in Azure | Visualisieren von Daten mit Power BI | [dp900-pbi-06-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-pbi-06-lab.md) |
