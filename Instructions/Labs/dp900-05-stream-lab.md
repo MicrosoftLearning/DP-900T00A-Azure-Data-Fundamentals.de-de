@@ -18,7 +18,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 1. Melden Sie sich bei Ihrem Azure-Abonnement im [Azure-Portal](https://portal.azure.com) mit den Anmeldeinformationen Ihres Azure-Abonnements an.
 
-1. Use the <bpt id="p1">**</bpt>[<ph id="ph1">\&gt;</ph>_]<ept id="p1">**</ept> button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a <bpt id="p2">***</bpt>Bash<ept id="p2">***</ept> environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+1. Verwenden Sie rechts neben der Suchleiste oben auf der Seite die Schaltfläche **[\>_]** , um eine neue Cloud Shell-Instanz im Azure-Portal zu erstellen. Wählen Sie eine ***Bash***-Umgebung aus, und erstellen Sie Speicher, falls Sie dazu aufgefordert werden. Die Cloud Shell bietet eine Befehlszeilenschnittstelle in einem Bereich am unteren Rand des Azure-Portal, wie hier gezeigt:
 
     ![Azure-Portal mit einem Cloud Shell-Bereich](./images/cloud-shell.png)
 
@@ -50,7 +50,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 ## <a name="explore-the-azure-resources"></a>Erkunden der Azure-Ressourcen
 
-1. In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com?azure-portal=true)</ept>, on the home page, select <bpt id="p2">**</bpt>Resource groups<ept id="p2">**</ept> to see the resource groups in your subscription. This should include the <bpt id="p1">**</bpt>learn*xxxxxxxxxxxxxxxxx...<ept id="p1">**</ept>* resource group identified by the setup script.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com?azure-portal=true) auf der Startseite die Option **Ressourcengruppen** aus, um die Ressourcengruppen in Ihrem Abonnement anzuzeigen. Es sollte auch die über das Setupskript identifizierte Ressourcengruppe **learn*xxxxxxxxxxxxxxxxx...** * angezeigt werden.
 2. Wählen Sie die Ressourcengruppe **learn*xxxxxxxxxxxxxxxxx...** * aus, und überprüfen Sie die darin enthaltenen Ressourcen. Es sollten folgende Elemente vorhanden sein:
     - Ein *IoT-Hub* mit dem Namen **iothub*xxxxxxxxxxxxx***, der für den Empfang eingehender Gerätedaten verwendet wird.
     - Ein *Speicherkonto* mit dem Namen **store*xxxxxxxxxxxx***, in das die Ergebnisse der Datenverarbeitung geschrieben werden.
@@ -61,7 +61,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
     > **Hinweis**: Wenn Sie die Learn-Sandbox verwenden, kann die Ressourcengruppe auch ein zweites *Speicherkonto* mit dem Namen **cloudshell*xxxxxxxx*** enthalten, das zum Speichern von Daten für die Azure Cloud Shell-Instanz verwendet wird, die Sie zum Ausführen des Setupskripts verwendet haben.
 
 3. Wählen Sie den Stream Analytics-Auftrag **stream*xxxxxxxxxxxxx*** aus, und sehen Sie sich die Informationen auf der Seite **Übersicht** an. Beachten Sie dabei die folgenden Details:
-    - The job has one <bpt id="p1">*</bpt>input<ept id="p1">*</ept> named <bpt id="p2">**</bpt>iotinput<ept id="p2">**</ept>, and one <bpt id="p3">*</bpt>output<ept id="p3">*</ept> named <bpt id="p4">**</bpt>bloboutput<ept id="p4">**</ept>. These reference the IoT Hub and Storage account created by the setup script.
+    - Der Auftrag umfasst eine *Eingabe* namens **iotinput** und eine *Ausgabe* namens **bloboutput**. Diese verweisen auf den IoT-Hub und das Speicherkonto, der bzw. das vom Setupskript erstellt wurde.
     - Der Auftrag umfasst eine *Abfrage*, die Daten aus der Eingabe **iotinput** liest und sie aggregiert, indem sie alle 10 Sekunden die Anzahl der verarbeiteten Nachrichten zählt und die Ergebnisse in die Ausgabe **bloboutput** schreibt.
 
 ## <a name="use-the-resources-to-analyze-streaming-data"></a>Verwenden der Ressourcen zum Analysieren von Streamingdaten

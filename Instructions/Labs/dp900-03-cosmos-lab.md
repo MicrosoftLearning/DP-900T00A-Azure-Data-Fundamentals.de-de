@@ -15,12 +15,12 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 ## <a name="create-a-cosmos-db-account"></a>Erstellen eines Cosmos DB-Kontos
 
-To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
+Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein Cosmos DB-Konto bereitstellen. In dieser Übung stellen Sie ein Cosmos DB-Konto bereit, für das die Core-API (SQL) verwendet wird.
 
-1. In the Azure portal, select <bpt id="p1">**</bpt>+ Create a resource<ept id="p1">**</ept> at the top left, and search for <bpt id="p2">*</bpt>Azure Cosmos DB<ept id="p2">*</ept>.  In the results, select <bpt id="p1">**</bpt>Azure Cosmos DB<ept id="p1">**</ept> and select  <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+1. Wählen Sie oben links im Azure-Portal **+ Ressource erstellen** aus, und suchen Sie nach *Azure Cosmos DB*.  Wählen Sie in den Ergebnissen **Azure Cosmos DB** und dann **Erstellen** aus.
 1. Wählen Sie auf der Kachel **Core (SQL) – empfohlen** die Option **Erstellen** aus.
 1. Geben Sie die folgenden Details ein, und wählen Sie **Überprüfen und erstellen** aus:
-    - <bpt id="p1">**</bpt>Subscription<ept id="p1">**</ept>: If you're using a sandbox, select <bpt id="p2">*</bpt>Concierge Subscription<ept id="p2">*</ept>. Otherwise, select your Azure subscription.
+    - **Abonnement**: Wenn Sie eine Sandbox verwenden, wählen Sie die Option *Concierge-Abonnement* aus. Wenn Sie Ihr eigenes Azure-Abonnement verwenden, wählen Sie dieses aus.
     - **Ressourcengruppe**: Wenn Sie eine Sandbox verwenden, wählen Sie die vorhandene Ressourcengruppe aus (mit einem ähnlichen Namen wie *learn-xxxx....* ). Erstellen Sie andernfalls eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
     - **Kontoname**: Geben Sie einen eindeutigen Namen ein.
     - **Speicherort**: Wählen Sie einen beliebigen empfohlenen Speicherort aus.
@@ -28,7 +28,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     - **Rabatt für Free-Tarif anwenden**: Wählen Sie „Anwenden“ aus, falls verfügbar.
     - **Beschränken des gesamten Kontodurchsatzes**: nicht ausgewählt
 1. Wählen Sie nach dem Überprüfen der Konfiguration **Erstellen** aus.
-1. Wait for deployment to complete. Then go to the deployed resource.
+1. Warten Sie, bis die Bereitstellung abgeschlossen ist. Wechseln Sie dann zur bereitgestellten Ressource.
 
 ## <a name="create-a-sample-database"></a>Erstellen einer Beispieldatenbank
 
@@ -41,7 +41,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ## <a name="view-and-create-items"></a>Anzeigen und Erstellen von Elementen
 
-1. In the Data Explorer page, expand the <bpt id="p1">**</bpt>SampleDB<ept id="p1">**</ept> database and the <bpt id="p2">**</bpt>SampleContainer<ept id="p2">**</ept> container, and select <bpt id="p3">**</bpt>Items<ept id="p3">**</ept> to see a list of items in the container. The items represent addresses, each with a unique id and other properties.
+1. Erweitern Sie auf der Seite „Data Explorer“ die Datenbank **SampleDB** und den Container **SampleContainer**, und wählen Sie **Elemente** aus, um eine Liste der Elemente im Container anzuzeigen. Die Elemente repräsentieren Adressen, jede mit einer eindeutigen ID und anderen Eigenschaften.
 1. Wählen Sie eines der Elemente in der Liste aus, um eine JSON-Darstellung der Elementdaten anzuzeigen.
 1. Wählen Sie oben auf der Seite **Neues Element aus**, um ein neues leeres Element zu erstellen.
 1. Ändern Sie den JSON-Code für das neue Element wie folgt, und wählen Sie dann **Speichern** aus.
@@ -71,6 +71,6 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 1. Verwenden Sie die Schaltfläche **Abfrage ausführen**, um die überarbeitete Abfrage auszuführen und die Ergebnisse zu überprüfen. Diese enthalten JSON-Entitäten für alle Elemente mit einem Feld **address**, das den Text „Any St.“ enthält.
 1. Schließen Sie SQL-Abfrage-Editor, und verwerfen Sie Ihre Änderungen.
 
-    You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
+    Nun wissen Sie, wie Sie JSON-Entitäten in einer Cosmos DB-Datenbank mithilfe der Data Explorer-Schnittstelle im Azure-Portal erstellen und abfragen können. In einem realen Szenario würde ein Anwendungsentwickler eines der vielen programmiersprachenspezifischen Software Development Kits (SDKs) verwenden, um die Core-API (SQL) aufzurufen und mit Daten in der Datenbank zu arbeiten.
 
 > **Tipp**: Wenn Sie die Erkundung von Azure Cosmos DB abgeschlossen haben, können Sie die in dieser Übung erstellte Ressourcengruppe löschen.
