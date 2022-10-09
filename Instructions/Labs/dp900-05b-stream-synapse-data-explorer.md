@@ -20,7 +20,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 1. Öffnen Sie das Azure-Portal unter [https://portal.azure/com](https://portal.azure.com?azure-portal=true), und melden Sie sich mit den Anmeldeinformationen für Ihr Azure-Abonnement an.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+    >                 **Hinweis**: Stellen Sie sicher, dass Sie sich im Verzeichnis mit Ihrem Abonnement befinden. Dies wird oben rechts unter Ihrer Benutzer-ID angegeben. Falls nicht, klicken Sie auf das Benutzersymbol, und wechseln Sie das Verzeichnis.
 
 1. Verwenden Sie das Symbol **&#65291; Ressource erstellen** auf der **Startseite** des Azure-Portals, um eine neue Ressource zu erstellen.
 1. Suchen Sie nach *Azure Synapse Analytics*, und erstellen Sie eine neue **Azure Synapse Analytics-Ressource** mit den folgenden Einstellungen:
@@ -33,7 +33,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
         - **Kontoname**: *Erstellen Sie ein neues Konto mit einem eindeutigen Namen, z. B. „datalake<Ihr_Name>“.*
         - **Dateisystemname**: *Erstellen Sie ein neues Dateisystem mit einem eindeutigen Namen, z. B. „fs<Ihr_Name>“.*
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >                 **Hinweis**: Ein Synapse Analytics-Arbeitsbereich erfordert zwei Ressourcengruppen in Ihrem Azure-Abonnement: eine für Ressourcen, die Sie explizit erstellen, und eine andere für verwaltete Ressourcen, die vom Dienst verwendet werden. Außerdem ist ein Data Lake-Speicherkonto erforderlich, in dem Daten, Skripts und andere Artefakte gespeichert werden.
 
 1. Wenn Sie diese Details eingegeben haben, klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**, um den Arbeitsbereich zu erstellen.
 1. Warten Sie, bis der Arbeitsbereich erstellt wurde. Dies kann etwa fünf Minuten dauern.
@@ -72,7 +72,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
     - **Datenformat**: CSV
     - **Ersten Datensatz ignorieren**: ausgewählt
     - **Zuordnung**: devices_mapping
-1. Ensure the column data types have been correctly identified as <bpt id="p1">*</bpt>Time (datetime)<ept id="p1">*</ept>, <bpt id="p2">*</bpt>Device (string)<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>Value (long)<ept id="p3">*</ept>). Then select <bpt id="p1">**</bpt>Next: Start Ingestion<ept id="p1">**</ept>.
+1. Stellen Sie sicher, dass die Spaltendatentypen ordnungsgemäß als *Uhrzeit (datetime)*, *Gerät (string)* und *Wert (long)*) identifiziert wurden. Wählen Sie dann **Weiter: Erfassung starten** aus.
 1. Klicken Sie nach Abschluss der Erfassung auf **Schließen**.
 1. Stellen Sie sicher, dass in Azure Data Explorer auf der Registerkarte **Abfrage** die Datenbank **iot-data** ausgewählt ist, und geben Sie dann im Abfragebereich die folgende Abfrage ein.
 
@@ -90,13 +90,13 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
     Wenn die Ergebnisse hiermit übereinstimmen, haben Sie die Tabelle **devices** erfolgreich aus den Daten in der Datei erstellt.
 
-    > <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: In this example, you imported a very small amount of batch data from a file, which is fine for the purposes of this exercise. In reality, you can use Data Explorer to analyze much larger volumes of data; and since you enabled stream ingestion, you could also have configured Data Explorer to ingest data into the table from a streaming source such as Azure Event Hubs.
+    >                 **Tipp**: In diesem Beispiel haben Sie eine sehr kleine Menge an Batchdaten aus einer Datei importiert, um den Zweck dieser Übung zu erfüllen. In Wirklichkeit können Sie mit dem Daten-Explorer viel größere Datenmengen analysieren. Und da Sie die Datenstromerfassung aktiviert haben, könnten Sie den Daten-Explorer auch dazu konfigurieren, Daten aus einer Streamingquelle wie Azure Event Hubs in der Tabelle zu erfassen.
 
 ## <a name="use-kusto-query-language-to-query-the-table-in-synapse-studio"></a>Verwenden der Kusto-Abfragesprache zum Abfragen der Tabelle in Synapse Studio
 
 1. Schließen Sie die Azure Data Explorer-Browserregisterkarte, und kehren Sie zu der Registerkarte zurück, die Synapse Studio enthält.
-1. On the <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> page, expand the <bpt id="p2">**</bpt>iot-data<ept id="p2">**</ept> database and its <bpt id="p3">**</bpt>Tables<ept id="p3">**</ept> folder. Then in the <bpt id="p1">**</bpt>...<ept id="p1">**</ept> menu for the <bpt id="p2">**</bpt>devices<ept id="p2">**</ept> table, select <bpt id="p3">**</bpt>New KQL Script<ept id="p3">**</ept><ph id="ph1"> &gt; </ph><bpt id="p4">**</bpt>Take 1000 rows<ept id="p4">**</ept>.
-1. Review the generated query and its results. The query should contain the following code:
+1. Erweitern Sie auf der Seite **Daten** die Datenbank **iot-data** und ihren Ordner **Tables**. Wählen Sie dann im Menü **...** für die Tabelle **devices** die Option **Neues KQL-Skript** > **1.000 Zeilen verwenden** aus.
+1. Überprüfen Sie die generierte Abfrage und ihre Ergebnisse. Die Datei sollte den folgenden Code enthalten:
 
     ```kusto
     devices
@@ -112,7 +112,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
     | where Device == 'Dev1'
     ```
 
-1. Select <bpt id="p1">**</bpt>&amp;#9655; Run<ept id="p1">**</ept> to run the query. Then review the results, which should contain only the rows for the <bpt id="p1">*</bpt>Dev1<ept id="p1">*</ept> device.
+1. Klicken Sie auf **&#9655; Ausführen**, um die Abfrage auszuführen. Überprüfen Sie dann die Ergebnisse, die nur die Zeilen für das *Dev1*-Gerät enthalten sollen.
 
 1. Ändern Sie die Abfrage wie folgt:
 

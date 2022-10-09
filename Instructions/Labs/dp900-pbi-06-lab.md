@@ -19,11 +19,11 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 Wenn Microsoft Power BI Desktop noch nicht auf Ihrem Windows-Computer installiert ist, können Sie es kostenlos herunterladen und installieren.
 
 1. Laden Sie das Installationsprogramm für Power BI Desktop von [https://aka.ms/power-bi-desktop](https://aka.ms/power-bi-desktop?azure-portal=true) herunter.
-1. When the file has downloaded, open it, and use the setup wizard to install Power BI Desktop on your computer. This insatllation may take a few minutes.
+1. Wenn die Datei heruntergeladen wurde, öffnen Sie sie, und verwenden Sie den Setup-Assistenten, um Power BI Desktop auf Ihrem Computer zu installieren. Diese Installation kann einige Minuten dauern.
 
 ## <a name="import-data"></a>Daten importieren
 
-1. Open Power BI Desktop. The application interface should look similar to this:
+1. Öffnen Sie Power BI Desktop. Die Anwendungsschnittstelle sollte in etwa wie folgt aussehen:
 
     ![Screenshot: Power BI Desktop-Startbildschirm](images/power-bi-start.png)
 
@@ -41,7 +41,7 @@ Wenn Microsoft Power BI Desktop noch nicht auf Ihrem Windows-Computer installier
 
 1. Wählen Sie im Dialogfeld „Auf Webinhalt zugreifen“ die Option **Verbinden** aus.
 
-1. Verify that the URL opens a dataset containing customer data, as shown below. Then select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> to load the data into the data model for your report.
+1. Überprüfen Sie, ob die URL ein Dataset mit Kundendaten öffnet, wie unten dargestellt. Wählen Sie dann **Laden** aus, um die Daten in das Datenmodell für Ihren Bericht zu laden.
 
     ![Screenshot: Dataset mit Kundendaten, die in Power BI angezeigt werden](images/customers.png)
 
@@ -67,7 +67,7 @@ Wenn Microsoft Power BI Desktop noch nicht auf Ihrem Windows-Computer installier
 
 Die drei Importierten Datentabellen wurden in ein Datenmodell geladen, das Sie nun erkunden und optimieren werden.
 
-1. In Power BI Desktop, on the left-side edge, select the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> tab, and then arrange the tables in the model so you can see them. You can hide the panes on the right side by using the <bpt id="p1">**</bpt><ph id="ph1">&gt;&gt;</ph><ept id="p1">**</ept> icons:
+1. Wählen Sie in Power BI Desktop am linken Rand die Registerkarte **Modell** aus, und ordnen Sie die Tabellen im Modell so an, dass sie sichtbar sind. Sie können die Bereiche auf der rechten Seite mithilfe der **>>** -Symbole ausblenden:
 
     ![Screenshot: Registerkarte „Modell“ in Power BI](images/model-tab.png)
 
@@ -77,12 +77,12 @@ Die drei Importierten Datentabellen wurden in ein Datenmodell geladen, das Sie n
 
     Durch diesen Schritt wird sichergestellt, dass die Umsatzwerte in den Berichtsvisualisierungen in der entsprechenden Währung angezeigt werden.
 
-1. In the products table, right-click the <bpt id="p1">**</bpt>Category<ept id="p1">**</ept> field (or open its <bpt id="p2">**</bpt><ph id="ph1">&amp;vellip;</ph><ept id="p2">**</ept> menu) and select <bpt id="p3">**</bpt>Create hierarchy<ept id="p3">**</ept>. This step creates a hierarchy named <bpt id="p1">**</bpt>Category Hierarchy<ept id="p1">**</ept>. You may need to expand or scroll in the <bpt id="p1">**</bpt>products<ept id="p1">**</ept> table to see this - you can also see it in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane:
+1. Klicken Sie in der Tabelle der Produkte mit der rechten Maustaste auf das Feld **Kategorie** (oder öffnen Sie dessen Menü **&vellip;** ), und wählen Sie **Hierarchie erstellen** aus. Dieser Schritt erstellt eine Hierarchie namens **Kategoriehierarchie**. Möglicherweise müssen Sie die Ansicht in der Tabelle **products** erweitern oder scrollen, um diese Hierarchie zu sehen. Sie wird auch im Bereich **Felder** angezeigt:
 
     ![Screenshot: Hinzufügen der Kategoriehierarchie in Power BI](images/category-hierarchy.png)
 
-1. In the products table, right-click the <bpt id="p1">**</bpt>ProductName<ept id="p1">**</ept> field (or open its <bpt id="p2">**</bpt><ph id="ph1">&amp;vellip;</ph><ept id="p2">**</ept> menu) and select <bpt id="p3">**</bpt>Add to hierarchy<ept id="p3">**</ept><ph id="ph2"> &gt; </ph><bpt id="p4">**</bpt>Category Hierarchy<ept id="p4">**</ept>. This adds the <bpt id="p1">**</bpt>ProductName<ept id="p1">**</ept> field to the hierarchy you created previously.
-1. In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, right-click <bpt id="p2">**</bpt>Category Hierarchy<ept id="p2">**</ept> (or open its <bpt id="p3">**</bpt>...<ept id="p3">**</ept> menu) and select <bpt id="p4">**</bpt>Rename<ept id="p4">**</ept>. Then rename the hierarchy to <bpt id="p1">**</bpt>Categorized Product<ept id="p1">**</ept>.
+1. Klicken Sie in der Produkttabelle mit der rechten Maustaste auf das Feld **ProductName** (oder öffnen Sie das zugehörige Menü **&vellip;** ), und wählen Sie **Zu Hierarchie hinzufügen** > **Kategoriehierarchie** aus. Dadurch wird das Feld **ProductName** (Produktname) zur zuvor erstellten Hierarchie hinzugefügt.
+1. Klicken Sie im Bereich **Felder** mit der rechten Maustaste auf **Kategoriehierarchie** (oder öffnen Sie das Menü **...**), und wählen Sie **Umbenennen** aus. Benennen Sie die Hierarchie in **Kategorisiertes Produkt** um.
 
     ![Screenshot: Umbenennen der Hierarchie in Power BI](images/rename-hierarchy.png)
 
@@ -95,9 +95,9 @@ Die drei Importierten Datentabellen wurden in ein Datenmodell geladen, das Sie n
 
 ## <a name="create-a-report"></a>Erstellen eines Berichts
 
-Now you're almost ready to create a report. First you need to check some settings to ensure all visualizations are enabled.
+Jetzt sind Sie fast so weit, einen Bericht zu erstellen. Zunächst müssen Sie einige Einstellungen überprüfen, um sicherzustellen, dass alle Visualisierungen aktiviert sind.
 
-1. On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Options and Settings<ept id="p2">**</ept>. Then select <bpt id="p1">**</bpt>Options<ept id="p1">**</ept>, and in the <bpt id="p2">**</bpt>Security<ept id="p2">**</ept> section, ensure that <bpt id="p3">**</bpt>Use Map and Filled Map visuals<ept id="p3">**</ept> is enabled and select <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.
+1. Wählen Sie im Menü **Datei** die Option **Optionen und Einstellungen** aus. Wählen Sie dann **Optionen** aus, und vergewissern Sie sich im Abschnitt **Sicherheit**, dass die Option **Verwenden von Kartenvisuals und Flächenkartogrammen** aktiviert ist, und wählen Sie **OK** aus.
 
     ![Screenshot: Festlegen der Eigenschaft der Visuals „Karte verwenden“ und „Flächenkartogramm“ in PowerBI](images/set-options.png)
 
@@ -107,42 +107,42 @@ Now you're almost ready to create a report. First you need to check some setting
 
     ![Screenshot: Registerkarte „Bericht“ in Power BI](images/report-tab.png)
 
-1. In the ribbon, above the report design surface, select <bpt id="p1">**</bpt>Text Box<ept id="p1">**</ept> and add a text box containing the text <bpt id="p2">**</bpt>Sales Report<ept id="p2">**</ept> to the report. Format the text to make it bold with a font size of 32.
+1. Wählen Sie im Menüband oberhalb der Berichtsentwurfsoberfläche **Textfeld** aus, und fügen Sie dem Bericht ein Textfeld mit dem Text **Sales Report** (Umsatzbericht) hinzu. Formatieren Sie den Text so, dass er fett angezeigt wird und einen Schriftgrad von 32 hat.
 
     ![Screenshot: Hinzufügen eines Textfelds in Power BI](images/text-box.png)
 
-1. Wenn die Datei heruntergeladen wurde, öffnen Sie sie, und verwenden Sie den Setup-Assistenten, um Power BI Desktop auf Ihrem Computer zu installieren.
+1. Wählen Sie einen leeren Bereich im Bericht aus, um die Auswahl des Textfelds aufzuheben. Erweitern Sie dann im Bereich **Felder** das Feld **Products** (Produkte), und wählen Sie das Feld **Categorized Products** (Kategorisierte Produkte) aus. Durch diesen Schritt wird dem Bericht eine Tabelle hinzufügt.
 
     ![Screenshot: Hinzufügen einer Tabelle mit kategorisierten Produkten zu einem Bericht in Power BI](images/categorized-products-table.png)
 
-1. Diese Installation kann einige Minuten dauern.
+1. Mit weiterhin ausgewählter Tabelle erweitern Sie im Bereich **Felder** den Bereich **Orders** (Bestellungen), und wählen Sie **Revenue** (Umsatz) aus. Eine Spalte „Revenue“ (Umsatz) wird der Tabelle hinzugefügt. Möglicherweise müssen Sie die Größe der Tabelle erweitern, damit sie sichtbar wird.
 
-    The revenue is formatted as currency, as you specified in the model. However, you didn't specify the number of decimal places, so the values include fractional amounts. It won't matter for the visualizations you're going to create, but you could go back to the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> tab and change the decimal places if you wish.
+    Der Umsatz wird in der Währung formatiert, die Sie im Modell angegeben haben. Allerdings haben Sie die Anzahl der Dezimalstellen nicht angegeben, sodass die Werte auch Bruchbeträge enthalten. Für die Visualisierungen, die Sie erstellen werden, spielt das keine Rolle, aber Sie können zur Registerkarte **Modell** oder **Daten** wechseln und bei Bedarf die Dezimalstellen ändern.
 
     ![Screenshot: Tabelle kategorisierter Produkte mit Umsatz in einem Bericht](images/revenue-column.png)
 
-1. With the table still selected, in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>Stacked column chart<ept id="p2">**</ept> visualization. The table is changed to a column chart showing revenue by category.
+1. Wählen Sie bei ausgewählter Tabelle im Bereich **Visualisierungen** die Visualisierung **Gestapeltes Säulendiagramm** aus. Die Tabelle wird in ein Säulendiagramm geändert, in dem der Umsatz nach Kategorie angezeigt wird.
 
     ![Screenshot: Gestapeltes Säulendiagramm kategorisierter Produkte mit Umsatz in einem Bericht](images/stacked-column-chart.png)
 
-1. Öffnen Sie Power BI Desktop.
+1. Wählen Sie oberhalb des ausgewählten Säulendiagramms das Symbol **&#8595;** aus, um den Drilldown zu aktivieren. Wählen Sie dann im Diagramm die zweite Spalte, *Road Bikes* (Straßenfahrräder), aus, um einen Drilldown durchzuführen und den Umsatz für die einzelnen Produkte in dieser Kategorie anzuzeigen. Diese Funktion ist möglich, da Sie eine Hierarchie von Kategorien und Produkten definiert haben.
 
     ![Screenshot: Säulendiagramm mit Detailinformationen zu Produkten innerhalb einer Kategorie](images/drill-down.png)
 
-1. Die Anwendungsschnittstelle sollte in etwa wie folgt aussehen:
-1. Select a blank area of the report, and then in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>Quantity<ept id="p2">**</ept> field in the <bpt id="p3">**</bpt>orders<ept id="p3">**</ept> table and the <bpt id="p4">**</bpt>Category<ept id="p4">**</ept> field in the <bpt id="p5">**</bpt>products<ept id="p5">**</ept> table. This step results in another column chart showing sales quantity by product category.
+1. Verwenden Sie das Symbol **&#x2191;** , um einen Drillup zur Kategorieebene durchzuführen. Wählen Sie dann das Symbol **(** &#8595; **)** aus, um das Drilldownfeature zu deaktivieren.
+1. Wählen Sie einen leeren Bereich des Berichts aus, und wählen Sie dann im Bereich **Felder** das Feld **Menge** in der Tabelle **Orders** (Bestellungen) und das Feld **Kategorie** in der Tabelle **Products** (Produkte) aus. Dieser Schritt führt zu einem weiteren Säulendiagramm, das die Umsatzmenge nach Produktkategorie zeigt.
 1. Wählen Sie bei ausgewähltem neuen Säulendiagramm im Bereich **Visualisierungen** die Option **Kreisdiagramm** aus, ändern Sie dann die Größe des Diagramms, und positionieren Sie es neben dem Säulendiagramm für den Umsatz nach Kategorie.
 
     ![Screenshot: Kreisdiagramm, das die Umsatzmenge nach Kategorie anzeigt](images/category-pie-chart.png)
 
-1. Select a blank area of the report, and then in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>City<ept id="p2">**</ept> field in the <bpt id="p3">**</bpt>customers<ept id="p3">**</ept> table and then select the <bpt id="p4">**</bpt>Revenue<ept id="p4">**</ept> field in the <bpt id="p5">**</bpt>orders<ept id="p5">**</ept> table. This results in a map showing sales revenue by city. Rearrange and resize the visualizations as needed:
+1. Wählen Sie einen leeren Bereich des Berichts aus, und wählen Sie dann im Bereich **Felder** das Feld **City** (Stadt) in der Tabelle **Customers** (Kunden) und das Feld **Revenue** (Umsatz) in der Tabelle **Products** (Produkte) aus. Dies führt zu einer Karte mit dem Umsatz nach Stadt. Sie können die Visualisierungen nach Bedarf neu anordnen und ihre Größe anpassen:
 
     ![Screenshot: Karte mit dem Umsatz nach Stadt](images/revenue-map.png)
 
-1. In the map, note that you can drag, double-click, use a mouse-wheel, or pinch and drag on a touch screen to interact. Then select a specific city, and note that the other visualizations in the report are modified to highlight the data for the selected city.
+1. Beachten Sie, dass Sie auf der Karte ziehen, doppelklicken, ein Mausrad verwenden oder auf einem Touchscreen entsprechend Ausschnitte verkleinern und vergrößern können, um zu interagieren. Wählen Sie dann eine bestimmte Stadt aus, und beachten Sie, dass die anderen Visualisierungen im Bericht geändert werden, um die Daten für die ausgewählte Stadt hervorzuheben.
 
     ![Screenshot: Karte mit Umsatz nach Stadt, wobei die Daten für die ausgewählte Stadt hervorgehoben sind](images/selected-data.png)
 
-1. On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Save<ept id="p2">**</ept>. Then save the file with an appropriate .pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
+1. Klicken Sie im Menü **Datei** auf **Speichern**. Speichern Sie dann die Datei unter einem geeigneten PBIX-Dateinamen. Sie können die Datei öffnen und die Datenmodellierung und -visualisierung in aller Ruhe weiter erkunden.
 
 Wenn Sie über ein Abonnement des [Power BI-Diensts](https://www.powerbi.com/?azure-portal=true) verfügen, können Sie sich bei Ihrem Konto anmelden und den Bericht in einem Power BI-Arbeitsbereich veröffentlichen. 

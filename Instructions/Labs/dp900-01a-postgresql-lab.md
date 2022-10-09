@@ -18,7 +18,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 In dieser Übung stellen Sie eine Azure Database for PostgreSQL-Ressource bereit.
 
-1. In the Azure portal, select <bpt id="p1">**</bpt>&amp;#65291; Create a resource<ept id="p1">**</ept> from the upper left-hand corner and search for <bpt id="p2">*</bpt>Azure Database for PostgreSQL<ept id="p2">*</ept>. Then in the resulting <bpt id="p1">**</bpt>Azure Database for PostgreSQL<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+1. Klicken Sie im Azure-Portal links oben auf **&#65291; Ressource erstellen**, und suchen Sie nach *Azure Database for PostgreSQL*. Klicken Sie auf der angezeigten Seite **Azure Database for PostgreSQL** auf **Erstellen**.
 
 1. Überprüfen Sie die verfügbaren Optionen für Azure Database for PostgreSQL. Klicken Sie anschließend auf der Kachel **Flexibler Server** auf **Erstellen**.
 
@@ -43,7 +43,7 @@ In dieser Übung stellen Sie eine Azure Database for PostgreSQL-Ressource bereit
 
 1. Klicken Sie zum Erstellen Ihrer PostgreSQL-Datenbank von Azure auf **Überprüfen + erstellen** und dann auf **Erstellen**.
 
-1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
+1. Warten Sie, bis die Bereitstellung abgeschlossen ist. Wechseln Sie anschließend zu der bereitgestellten Ressource, die wie folgt aussehen sollte:
 
     ![Screenshot: Azure-Portal mit der Seite „Azure Database for PostgreSQL“](images/postgresql-portal.png)
 

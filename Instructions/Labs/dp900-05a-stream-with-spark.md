@@ -20,7 +20,7 @@ Um Synapse Analytics verwenden zu können, müssen Sie eine Synapse Analytics-Ar
 
 1. Öffnen Sie das [Azure Portal](https://portal.azure.com?azure-portal=true), und melden Sie sich mit den Anmeldeinformationen für Ihr Azure-Abonnement an.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Ensure you are working in the directory containing your own subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+    >                 **Hinweis**: Stellen Sie sicher, dass Sie sich im Verzeichnis mit Ihrem eigenen Abonnement befinden. Dies wird oben rechts unter Ihrer Benutzer-ID angegeben. Falls nicht, klicken Sie auf das Benutzersymbol, und wechseln Sie das Verzeichnis.
 
 2. Verwenden Sie das Symbol **&#65291; Ressource erstellen** auf der **Startseite** des Azure-Portals, um eine neue Ressource zu erstellen.
 3. Suchen Sie nach *Azure Synapse Analytics*, und erstellen Sie eine neue **Azure Synapse Analytics-Ressource** mit den folgenden Einstellungen:
@@ -33,7 +33,7 @@ Um Synapse Analytics verwenden zu können, müssen Sie eine Synapse Analytics-Ar
         - **Kontoname**: *Erstellen Sie ein neues Konto mit einem eindeutigen Namen, z. B. „datalake<Ihr_Name>“.*
         - **Dateisystemname**: *Erstellen Sie ein neues Dateisystem mit einem eindeutigen Namen, z. B. „fs<Ihr_Name>“.*
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >                 **Hinweis**: Ein Synapse Analytics-Arbeitsbereich erfordert zwei Ressourcengruppen in Ihrem Azure-Abonnement: eine für Ressourcen, die Sie explizit erstellen, und eine andere für verwaltete Ressourcen, die vom Dienst verwendet werden. Außerdem ist ein Data Lake-Speicherkonto erforderlich, in dem Daten, Skripts und andere Artefakte gespeichert werden.
 
 4. Wenn Sie diese Details eingegeben haben, klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**, um den Arbeitsbereich zu erstellen.
 5. Warten Sie, bis der Arbeitsbereich erstellt wurde. Dies kann etwa fünf Minuten dauern.
@@ -67,7 +67,7 @@ Um die Streamverarbeitung mit Spark zu erkunden, verwenden Sie ein Notebook. Die
 
 ## <a name="delete-azure-resources"></a>Löschen von Azure-Ressourcen
 
-> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: If you intend to complete other exercises that use Azure Synapse Analytics, you can skip this section. Otherwise, follow the steps below to avoid unnecessary Azure costs.
+>                 **Hinweis**: Wenn Sie andere Übungen abschließen möchten, in denen Azure Synapse Analytics verwendet wird, können Sie diesen Abschnitt überspringen. Führen Sie andernfalls die folgenden Schritte aus, um unnötige Azure-Kosten zu vermeiden.
 
 1. Schließen Sie die Synapse Studio-Browserregisterkarte, ohne Änderungen zu speichern, und kehren Sie zum Azure-Portal zurück.
 1. Wählen Sie auf der **Startseite** des Azure-Portals die Option **Ressource erstellen** aus.
