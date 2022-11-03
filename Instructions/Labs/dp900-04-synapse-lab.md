@@ -106,7 +106,7 @@ Eine der wichtigsten Aufgaben, die Sie mit Azure Synapse Analytics ausführen k�
     - **Protokollierung aktivieren**: <u>Nicht</u> ausgewählt
     - **Staging aktivieren**: <u>Nicht</u> ausgewählt
 11. Lesen Sie im Schritt **Überprüfen und fertig stellen** im Teilschritt **Überprüfen** die Zusammenfassung, und klicken Sie dann auf **Weiter >**.
-12. Warten Sie im Schritt **Bereitstellung**, bis die Pipeline bereitgestellt wurde, und klicken Sie dann auf **Fertig stellen**.
+12. Warten Sie im Teilschritt **Bereitstellung**, bis die Pipeline bereitgestellt wurde, und klicken Sie dann auf **Fertig stellen**.
 13. Wählen Sie in Synapse Studio die Seite **Überwachen** aus, und warten Sie, bis auf der Registerkarte **Pipelineausführung** die Pipeline **Produkte kopieren** mit dem Status **Erfolgreich** ausgeführt wurde. (Über die Schaltfläche **&#8635; Aktualisieren** auf der Seite „Pipelineausführung“ können Sie den Status aktualisieren.)
 14. Wählen Sie auf der Seite **Daten** die Registerkarte **Verknüpft** aus, und erweitern Sie die Hierarchie **Azure Data Lake Storage Gen 2**, bis der Dateispeicher für Ihren Synapse-Arbeitsbereich angezeigt wird. Wählen Sie dann den Dateispeicher aus, um zu überprüfen, ob eine Datei mit dem Namen **products.csv** an diesen Speicherort kopiert wurde, wie hier gezeigt:
 
