@@ -15,10 +15,10 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 ## <a name="create-a-cosmos-db-account"></a>Erstellen eines Cosmos DB-Kontos
 
-Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein Cosmos DB-Konto bereitstellen. In dieser Übung stellen Sie ein Cosmos DB-Konto bereit, für das die Core-API (SQL) verwendet wird.
+Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein Cosmos DB-Konto bereitstellen. In dieser Übung stellen Sie ein Cosmos DB-Konto bereit, für das Azure Cosmos DB for NoSQL verwendet wird.
 
 1. Wählen Sie oben links im Azure-Portal **+ Ressource erstellen** aus, und suchen Sie nach *Azure Cosmos DB*.  Wählen Sie in den Ergebnissen **Azure Cosmos DB** und dann **Erstellen** aus.
-1. Wählen Sie auf der Kachel **Core (SQL) – empfohlen** die Option **Erstellen** aus.
+1. Wählen Sie in der **Azure Cosmos DB für NoSQL**-Kachel **Erstellen** aus.
 1. Geben Sie die folgenden Details ein, und wählen Sie **Überprüfen und erstellen** aus:
     - **Abonnement**: Wenn Sie eine Sandbox verwenden, wählen Sie die Option *Concierge-Abonnement* aus. Wenn Sie Ihr eigenes Azure-Abonnement verwenden, wählen Sie dieses aus.
     - **Ressourcengruppe**: Wenn Sie eine Sandbox verwenden, wählen Sie die vorhandene Ressourcengruppe aus (mit einem ähnlichen Namen wie *learn-xxxx....* ). Erstellen Sie andernfalls eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
@@ -71,6 +71,6 @@ Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein
 1. Verwenden Sie die Schaltfläche **Abfrage ausführen**, um die überarbeitete Abfrage auszuführen und die Ergebnisse zu überprüfen. Diese enthalten JSON-Entitäten für alle Elemente mit einem Feld **address**, das den Text „Any St.“ enthält.
 1. Schließen Sie SQL-Abfrage-Editor, und verwerfen Sie Ihre Änderungen.
 
-    Nun wissen Sie, wie Sie JSON-Entitäten in einer Cosmos DB-Datenbank mithilfe der Data Explorer-Schnittstelle im Azure-Portal erstellen und abfragen können. In einem realen Szenario würde ein Anwendungsentwickler eines der vielen programmiersprachenspezifischen Software Development Kits (SDKs) verwenden, um die Core-API (SQL) aufzurufen und mit Daten in der Datenbank zu arbeiten.
+    Nun wissen Sie, wie Sie JSON-Entitäten in einer Cosmos DB-Datenbank mithilfe der Data Explorer-Schnittstelle im Azure-Portal erstellen und abfragen können. In einem realen Szenario würde ein Anwendungsentwickler eines der vielen programmiersprachenspezifischen Software Development Kits (SDKs) verwenden, um die NoSQL-API aufzurufen und mit Daten in der Datenbank zu arbeiten.
 
 > **Tipp**: Wenn Sie die Erkundung von Azure Cosmos DB abgeschlossen haben, können Sie die in dieser Übung erstellte Ressourcengruppe löschen.

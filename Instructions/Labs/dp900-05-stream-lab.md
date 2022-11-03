@@ -84,8 +84,8 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 6. Wählen Sie im Bereich auf der linken Seite des Blatts „Speicherkonto“ die Registerkarte **Container** aus.
 7. Öffnen Sie den Container **data**.
 8. Navigieren Sie im Container **Daten** durch die Ordnerhierarchie, die einen Ordner für das aktuelle Jahr mit Unterordnern für den Monat, den Tag und die Stunde enthält.
-9. Wählen Sie im Ordner für die Stunde die erstellte Datei aus, die einen ähnlichen Namen haben sollte wie **0_xxxxxxxxxxxxxxxx.json**.
-10. Wählen Sie auf der Seite für die Datei die Option **Bearbeiten** aus, und überprüfen Sie den Inhalt der Datei. Dieser sollte aus einem JSON-Datensatz für jeden 10-Sekunden-Zeitraum bestehen, der die Anzahl der von IoT-Geräten empfangenen Nachrichten anzeigt, etwa so:
+9. Suchen Sie im Ordner für die Stunde die erstellte Datei, die einen ähnlichen Namen haben sollte wie **0_xxxxxxxxxxxxxxxx.json**.
+10. Wählen Sie im Menü für die Datei die Option **...** (rechts von den Details) und dann **Anzeigen/bearbeiten** aus, und überprüfen Sie den Inhalt der Datei. Dieser sollte aus einem JSON-Datensatz für jeden 10-Sekunden-Zeitraum bestehen, der die Anzahl der von IoT-Geräten empfangenen Nachrichten anzeigt, etwa so:
 
     ```
     {"starttime":"2021-10-23T01:02:13.2221657Z","endtime":"2021-10-23T01:02:23.2221657Z","device":"iotdevice","messages":2}

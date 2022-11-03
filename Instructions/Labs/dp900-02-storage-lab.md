@@ -68,7 +68,7 @@ Mit der Azure Data Lake Store Gen2-Unterstützung können Sie hierarchische Ordn
 
 1. Laden Sie die JSON-Datei [product2.json](https://aka.ms/product2.json?azure-portal=true) von `https://aka.ms/product2.json` herunter, und speichern Sie sie auf Ihrem Computer in dem Ordner, in den Sie zuvor **product1.json** heruntergeladen haben. Sie laden sie später in Blob Storage hoch.
 1. Scrollen Sie im Azure-Portal auf der Seite Ihres Speicherkontos links nach unten zum Abschnitt **Einstellungen**, und wählen Sie **Data Lake Gen2-Upgrade** aus.
-1. Erweitern Sie die einzelnen Schritte auf der Seite ****Data Lake Gen2-Upgrade****, und führen Sie sie aus, um ein Upgrade Ihres Speicherkontos durchzuführen und somit den hierarchischen Namespace zu aktivieren und Azure Data Lake Storage Gen 2 zu unterstützen. Dieser Vorgang kann einige Zeit dauern.
+1. Erweitern Sie die einzelnen Schritte auf der Seite **Data Lake Gen2-Upgrade**, und führen Sie sie aus, um ein Upgrade Ihres Speicherkontos durchzuführen und somit den hierarchischen Namespace zu aktivieren und Azure Data Lake Storage Gen 2 zu unterstützen. Dieser Vorgang kann einige Zeit dauern.
 1. Wenn das Upgrade abgeschlossen ist, wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus, und navigieren Sie zurück zum Stamm Ihres Blobcontainers **data**, der weiterhin den Ordner **product_data** enthält.
 1. Wählen Sie den Ordner **product_data** aus, und vergewissern Sie sich, dass er noch die Datei **product1.json** enthält, die Sie zuvor hochgeladen haben.
 1. Verwenden Sie die Schaltfläche **&#10514; Hochladen**, um den Bereich **Blob hochladen** zu öffnen.
