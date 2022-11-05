@@ -20,7 +20,7 @@ In dieser Übung stellen Sie eine Azure Database for PostgreSQL-Ressource bereit
 
 1. Klicken Sie im Azure-Portal links oben auf **&#65291; Ressource erstellen**, und suchen Sie nach *Azure Database for PostgreSQL*. Klicken Sie auf der angezeigten Seite **Azure Database for PostgreSQL** auf **Erstellen**.
 
-1. Überprüfen Sie die verfügbaren Optionen für Azure Database for PostgreSQL. Klicken Sie anschließend auf der Kachel **Flexibler Server** auf **Erstellen**.
+1. Sehen Sie sich die verfügbaren Azure Database for PostgreSQL-Optionen an, und wählen Sie dann auf der **Azure Database for PostgreSQL**-Kachel **Flexible server (Recommended)** (Flexibler Server (empfohlen)) und dann **Erstellen** aus.
 
     ![Screenshot: Bereitstellungsoptionen für Azure Database for PostgreSQL](images/postgresql-options.png)
 
