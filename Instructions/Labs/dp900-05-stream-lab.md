@@ -58,9 +58,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
     Falls nicht alle drei Ressourcen aufgeführt sind, klicken Sie auf die Schaltfläche **&#8635; Aktualisieren**, bis sie angezeigt werden.
 
-    > **Hinweis**: Wenn Sie die Learn-Sandbox verwenden, kann die Ressourcengruppe auch ein zweites *Speicherkonto* mit dem Namen **cloudshell*xxxxxxxx*** enthalten, das zum Speichern von Daten für die Azure Cloud Shell-Instanz verwendet wird, die Sie zum Ausführen des Setupskripts verwendet haben.
-
-3. Wählen Sie den Stream Analytics-Auftrag **stream*xxxxxxxxxxxxx*** aus, und sehen Sie sich die Informationen auf der Seite **Übersicht** an. Beachten Sie dabei die folgenden Details:
+ 3. Wählen Sie den Stream Analytics-Auftrag **stream*xxxxxxxxxxxxx*** aus, und sehen Sie sich die Informationen auf der Seite **Übersicht** an. Beachten Sie dabei die folgenden Details:
     - Der Auftrag umfasst eine *Eingabe* namens **iotinput** und eine *Ausgabe* namens **bloboutput**. Diese verweisen auf den IoT-Hub und das Speicherkonto, der bzw. das vom Setupskript erstellt wurde.
     - Der Auftrag umfasst eine *Abfrage*, die Daten aus der Eingabe **iotinput** liest und sie aggregiert, indem sie alle 10 Sekunden die Anzahl der verarbeiteten Nachrichten zählt und die Ergebnisse in die Ausgabe **bloboutput** schreibt.
 
