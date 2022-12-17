@@ -1,12 +1,12 @@
 ---
 lab:
-    title: 'Lab 02: Verwenden von SQL für Abfragen der Azure-SQL-Datenbank'
-    module: 'Modul 02: Erkunden relationaler Daten in Azure'
+  title: 'Lab 02: Abfragen von Azure SQL-Datenbank mithilfe von SQL'
+  module: 'Module 02: Explore relational data in Azure'
 ---
 
-## Anweisungen
-Contoso hat die SQL-Datenbank bereitgestellt und alle Inventardaten in den Datenspeicher importiert. Als Hauptentwickler wurden Sie aufgefordert, einige Abfragen über die Daten auszuführen.
+## <a name="instructions"></a>Instructions
+Contoso hat die SQL-Datenbank bereitgestellt und alle Bestandsdaten in den Datenspeicher importiert. Als Chefentwickler werden Sie gebeten, einige Abfragen für die Daten auszuführen.
 
-In diesem Lab fragen Sie die Datenbank ab, um herauszufinden, wie viele Produkte sich in der Datenbank befinden, und wie viele Artikel für ein bestimmtes Produkt auf Lager sind.
+In diesem Lab fragen Sie die Datenbank ab, um zu ermitteln, wie viele Produkte sich darin und wie viele Einheiten eines bestimmten Produkts vorhanden sind.
 
-1.	Navigieren Sie unter https://aka.ms/dp900lab02-ger zur Microsoft Learn-Übung und schließen Sie die Einheit im Browser ab: 
+1.  Navigieren Sie zur Microsoft Learn-Übung unter https://aka.ms/dp900lab02, und schließen Sie die Einheit im Browser ab: 

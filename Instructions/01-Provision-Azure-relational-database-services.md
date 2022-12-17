@@ -1,12 +1,13 @@
 ---
 lab:
-    title: 'Lab 01: Bereitstellung relationaler Azure-Datenbankdienste'
-    module: 'Modul 02: Erkunden relationaler Daten in Azure'
+  title: 'Lab 01: Bereitstellen von relationalen Azure-Datenbankdiensten'
+  module: 'Module 02: Explore relational data in Azure'
 ---
 
-## Anweisungen
-Im Rahmen Ihrer Rolle als Dateningenieur bei Contoso wurden Sie aufgefordert, SQL Server-, PostgreSQL- und MySQL-Server für Azure zu erstellen und zu konfigurieren.
+## <a name="instructions"></a>Instructions
 
-In diesem Lab erstellen und konfigurieren Sie einen der folgenden Server für Azure: SQL Server, PostgreSQL oder MySQL.
+Im Rahmen Ihrer Stelle bei Contoso als technische Fachkraft für Daten wurden Sie gebeten, SQL Server-, PostgreSQL- und MySQL-Server für Azure zu erstellen und zu konfigurieren.
 
-1.	Navigieren Sie unter https://aka.ms/dp900lab01-ger zur Microsoft Learn-Übung und schließen Sie die Einheit im Browser ab: 
+In dieser Übung erstellen und konfigurieren Sie einen der folgenden Server für Azure: SQL Server, PostgreSQL oder MySQL.
+
+1.  Navigieren Sie zur Microsoft Learn-Übung unter https://aka.ms/dp900lab01, und schließen Sie die Einheit im Browser ab: 
