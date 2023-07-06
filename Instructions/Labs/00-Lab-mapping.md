@@ -1,10 +1,10 @@
-# <a name="dp-900-trainer-lab-mapping"></a>DP-900-Lab-Zuordnung für Kursleiter
+# DP-900-Lab-Zuordnung für Kursleiter
 
 Dieser Kurs, DP-900: Microsoft Azure Data Fundamentals, enthält verschiedene Labs für Präsenzschulungen. 
 
 > Hinweis: Kursleiter können Studierende bitten, ein oder mehrere Übungen zu ihrer eigenen Zeit abzuschließen, indem Sie die Übungen in den zugehörigen Lernpfaden verwenden (https://docs.microsoft.com/users/23110622/collections/0kjyh8rn5gdrjj). 
 
-## <a name="dp-900-module-mapping-to-labs"></a>Zuordnung von DP-900-Modulen zu Labs
+## Zuordnung von DP-900-Modulen zu Labs
 
 | Modul | Labor | Markdowndatei |
 | --- | --- | --- |

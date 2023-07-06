@@ -4,17 +4,17 @@ lab:
   module: Explore relational data in Azure
 ---
 
-# <a name="explore-azure-database-for-mysql"></a>Einführung in Azure Database for MySQL
+# Einführung in Azure Database for MySQL
 
 In dieser Übung stellen Sie eine Azure Database for MySQL-Ressource in Ihrem Azure-Abonnement bereit.
 
 Dieses Lab dauert ungefähr **5** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="provision-an-azure-database-for-mysql-resource"></a>Bereitstellen einer Azure Database for MySQL-Ressource
+## Bereitstellen einer Azure Database for MySQL-Ressource
 
 In dieser Übung stellen Sie eine Azure Database for MySQL-Ressource bereit.
 

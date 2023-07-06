@@ -4,17 +4,17 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-spark-streaming-in-azure-synapse-analytics"></a>Erste Schritte mit Spark-Streaming in Azure Synapse Analytics
+# Erste Schritte mit Spark-Streaming in Azure Synapse Analytics
 
 In dieser Übung verwenden Sie *strukturiertes Spark-Streaming* und *Deltatabellen* in Azure Synapse Analytics, um Streamingdaten zu verarbeiten.
 
 Dieses Lab dauert ungefähr **15** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="provision-a-synapse-analytics-workspace"></a>Bereitstellen eines Synapse Analytics-Arbeitsbereichs
+## Bereitstellen eines Synapse Analytics-Arbeitsbereichs
 
 Um Synapse Analytics verwenden zu können, müssen Sie eine Synapse Analytics-Arbeitsbereichsressource in Ihrem Azure-Abonnement bereitstellen.
 
@@ -43,7 +43,7 @@ Um Synapse Analytics verwenden zu können, müssen Sie eine Synapse Analytics-Ar
 
     ![Synapse Studio](images/synapse-studio.png)
 
-## <a name="create-a-spark-pool"></a>Erstellen eines Spark-Pools
+## Erstellen eines Spark-Pools
 
 Um Spark zum Verarbeiten von Streamingdaten zu nutzen, müssen Sie Ihrem Azure Synapse-Arbeitsbereich einen Spark-Pool hinzufügen.
 
@@ -56,7 +56,7 @@ Um Spark zum Verarbeiten von Streamingdaten zu nutzen, müssen Sie Ihrem Azure S
     - **Anzahl der Knoten**: 3----3
 3. Überprüfen und erstellen Sie den Spark-Pool, und warten Sie, bis er bereitgestellt ist (dies kann einige Minuten dauern).
 
-## <a name="explore-stream-processing"></a>Erkunden der Streamverarbeitung
+## Erkunden der Streamverarbeitung
 
 Um die Streamverarbeitung mit Spark zu erkunden, verwenden Sie ein Notebook. Dieses enthält Python-Code und Hinweise, die Sie bei der Durchführung einiger grundlegender Aufgaben zur Streamverarbeitung mit strukturiertem Spark-Streaming und Deltatabellen unterstützen.
 
@@ -65,7 +65,7 @@ Um die Streamverarbeitung mit Spark zu erkunden, verwenden Sie ein Notebook. Die
 3. Klicken Sie im Menü **&#65291;** auf die Option **&#8612; Importieren**, und wählen Sie die auf Ihrem lokalen Computer gespeicherte Datei **Structured Streaming and Delta Tables.ipynb** aus.
 4. Befolgen Sie die Anweisungen im Notebook, um es mit Ihrem Spark-Pool zu verbinden und die darin enthaltenen Codezellen auszuführen, um verschiedene Möglichkeiten zur Verwendung von Spark für die Streamverarbeitung zu erkunden.
 
-## <a name="delete-azure-resources"></a>Löschen von Azure-Ressourcen
+## Löschen von Azure-Ressourcen
 
 >                 **Hinweis**: Wenn Sie andere Übungen abschließen möchten, in denen Azure Synapse Analytics verwendet wird, können Sie diesen Abschnitt überspringen. Führen Sie andernfalls die folgenden Schritte aus, um unnötige Azure-Kosten zu vermeiden.
 

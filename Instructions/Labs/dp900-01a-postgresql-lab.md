@@ -4,17 +4,17 @@ lab:
   module: Explore relational data in Azure
 ---
 
-# <a name="explore-azure-database-for-postgresql"></a>Einführung in Azure Database for PostgreSQL
+# Einführung in Azure Database for PostgreSQL
 
 In dieser Übung stellen Sie eine Azure Database for PostgreSQL-Ressource in Ihrem Azure-Abonnement bereit.
 
 Dieses Lab dauert ungefähr **5** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="provision-an-azure-database-for-postgresql-resource"></a>Bereitstellen einer Azure Database for PostgreSQL-Ressource
+## Bereitstellen einer Azure Database for PostgreSQL-Ressource
 
 In dieser Übung stellen Sie eine Azure Database for PostgreSQL-Ressource bereit.
 
