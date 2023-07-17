@@ -4,17 +4,17 @@ lab:
   module: Explore Azure Storage for non-relational data
 ---
 
-# <a name="explore-azure-storage"></a>Erkunden von Azure Storage
+# Erkunden von Azure Storage
 
 In dieser Übung stellen Sie ein Azure Storage-Konto in Ihrem Azure-Abonnement bereit und erkunden die verschiedenen Möglichkeiten, es zum Speichern von Daten zu verwenden.
 
 Dieses Lab dauert ungefähr **15** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="provision-an-azure-storage-account"></a>Bereitstellen eines Azure Storage-Kontos
+## Bereitstellen eines Azure Storage-Kontos
 
 Der erste Schritt bei der Verwendung von Azure Storage ist die Bereitstellung eines Azure Storage-Kontos in Ihrem Azure-Abonnement.
 
@@ -30,10 +30,10 @@ Der erste Schritt bei der Verwendung von Azure Storage ist die Bereitstellung ei
 
 1. Wählen Sie **Weiter: Erweitert >** aus, und zeigen Sie die Optionen der erweiterten Konfiguration an. Beachten Sie insbesondere, dass Sie hier den hierarchischen Namespace aktivieren können, um Azure Data Lake Storage Gen2 zu unterstützen. Lassen Sie diese Option **<u>deaktiviert</u>** (Sie aktivieren sie später), und wählen Sie dann **Weiter: Netzwerk >** aus, um die Netzwerkoptionen für Ihr Speicherkonto anzuzeigen.
 1. Wählen Sie **Weiter: Datenschutz >** aus, und <u>deaktivieren</u> Sie dann im Abschnitt **Wiederherstellung** alle Optionen unter **Vorläufiges Löschen aktivieren**. Diese Optionen behalten gelöschte Dateien für die nachfolgende Wiederherstellung bei, können aber später Probleme verursachen, wenn Sie den hierarchischen Namespace aktivieren.
-1. Fahren Sie mit den verbleibenden Seiten **Weiter >** fort, ohne die Standardeinstellungen zu ändern. Warten Sie dann auf der Seite **Überprüfen + erstellen**, bis Ihre Auswahl überprüft wurde, und wählen Sie **Erstellen** aus, um Ihr Azure Storage-Konto zu erstellen.
+1. Fahren Sie mit den verbleibenden Seiten **Weiter >** fort, ohne die Standardeinstellungen zu ändern. Warten Sie dann auf der Seite **Überprüfen**, bis Ihre Auswahl überprüft wurde, und wählen Sie **Erstellen** aus, um Ihr Azure Storage-Konto zu erstellen.
 1. Warten Sie, bis die Bereitstellung abgeschlossen ist. Wechseln Sie dann zu der Ressource, die bereitgestellt wurde.
 
-## <a name="explore-blob-storage"></a>Erkunden von Blobspeicher
+## Erkunden von Blobspeicher
 
 Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Container für Blobdaten erstellen.
 
@@ -62,7 +62,7 @@ Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Conta
 1. Wählen Sie das Symbol **&#x2027;&#x2027;&#x2027;** am rechten Ende des Ordners aus, und beachten Sie, dass keine Optionen angezeigt werden. Ordner in einem flachen Namespaceblobcontainer sind virtuell und können nicht verwaltet werden.
 1. Verwenden Sie das Symbol **X** oben rechts auf der Seite **data**, um die Seite zu schließen und zur Seite **Container** zurückzukehren.
 
-## <a name="explore-azure-data-lake-storage-gen2"></a>Erkunden von Azure Data Lake Storage Gen2
+## Erkunden von Azure Data Lake Storage Gen2
 
 Mit der Azure Data Lake Store Gen2-Unterstützung können Sie hierarchische Ordner verwenden, um den Zugriff auf Blobs zu organisieren und zu verwalten. Außerdem können Sie mit Azure Blob Storage verteilte Dateisysteme für gängige Big Data-Analyseplattformen hosten.
 
@@ -79,7 +79,7 @@ Mit der Azure Data Lake Store Gen2-Unterstützung können Sie hierarchische Ordn
 1. Wählen Sie das Symbol **&#x2027;&#x2027;&#x2027;** am rechten Ende des Ordners aus, und beachten Sie, dass Sie Konfigurationsaufgaben wie das Umbenennen von Ordnern und das Festlegen von Berechtigungen auf Ordnerebene ausführen können, wenn der hierarchische Namespace aktiviert ist.
 1. Verwenden Sie das Symbol **X** oben rechts auf der Seite **data**, um die Seite zu schließen und zur Seite **Container** zurückzukehren.
 
-## <a name="explore-azure-files"></a>Erkunden von Azure Files
+## Erkunden von Azure Files
 
 Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 
@@ -89,7 +89,7 @@ Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 1. Wählen Sie oben auf der Seite **Verbinden** aus. Beachten Sie dann, dass der Bereich **Verbinden** Registerkarten für gängige Betriebssysteme (Windows, Linux und macOS) enthält, die Skripts enthalten, die Sie ausführen können, um von einem Clientcomputer aus eine Verbindung mit dem freigegebenen Ordner herzustellen.
 1. Schließen Sie den Bereich **Verbinden** und dann die Seite **files**, um zur Seite **Dateifreigaben** für Ihr Azure-Speicherkonto zurückzukehren.
 
-## <a name="explore-azure-tables"></a>Erkunden von Azure Tables
+## Erkunden von Azure Tables
 
 Azure Tables bietet einen Schlüssel-Wert-Speicher für Anwendungen, die Datenwerte speichern müssen, aber nicht die vollständige Funktionalität und Struktur einer relationalen Datenbank benötigen.
 

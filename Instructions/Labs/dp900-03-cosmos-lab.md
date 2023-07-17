@@ -3,17 +3,17 @@ lab:
   title: Einführung in Azure Cosmos DB
   module: Explore fundamentals of Azure Cosmos DB
 ---
-# <a name="explore-azure-cosmos-db"></a>Einführung in Azure Cosmos DB
+# Einführung in Azure Cosmos DB
 
 In dieser Übung stellen Sie eine Azure Cosmos DB-Datenbank in Ihrem Azure-Abonnement bereit und erkunden die verschiedenen Möglichkeiten, es zum Speichern nicht rationaler Daten zu verwenden.
 
 Dieses Lab dauert ungefähr **15** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="create-a-cosmos-db-account"></a>Erstellen eines Cosmos DB-Kontos
+## Erstellen eines Cosmos DB-Kontos
 
 Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein Cosmos DB-Konto bereitstellen. In dieser Übung stellen Sie ein Cosmos DB-Konto bereit, für das Azure Cosmos DB for NoSQL verwendet wird.
 
@@ -30,7 +30,7 @@ Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein
 1. Wählen Sie nach dem Überprüfen der Konfiguration **Erstellen** aus.
 1. Warten Sie, bis die Bereitstellung abgeschlossen ist. Wechseln Sie dann zur bereitgestellten Ressource.
 
-## <a name="create-a-sample-database"></a>Erstellen einer Beispieldatenbank
+## Erstellen einer Beispieldatenbank
 
 *Schließen Sie während dieses Vorgangs alle Tipps, die im Portal angezeigt werden*.
 
@@ -39,23 +39,27 @@ Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein
 1. Überprüfen Sie auf der Registerkarte **Neuer Container** die vorausgefüllten Einstellungen für die Beispieldatenbank, und klicken Sie auf **OK**.
 1. Beobachten Sie den Status im Bereich am unteren Bildschirmrand, bis die Datenbank **SampleDB** und der zugehörige Container **SampleContainer** erstellt wurden (dies kann etwa eine Minute dauern).
 
-## <a name="view-and-create-items"></a>Anzeigen und Erstellen von Elementen
+## Anzeigen und Erstellen von Elementen
 
-1. Erweitern Sie auf der Seite „Data Explorer“ die Datenbank **SampleDB** und den Container **SampleContainer**, und wählen Sie **Elemente** aus, um eine Liste der Elemente im Container anzuzeigen. Die Elemente repräsentieren Adressen, jede mit einer eindeutigen ID und anderen Eigenschaften.
+1. Erweitern Sie auf der Seite „Data Explorer“ die Datenbank **SampleDB** und den Container **SampleContainer**, und wählen Sie **Elemente** aus, um eine Liste der Elemente im Container anzuzeigen. Die Elemente repräsentieren Produktdaten mit jeweils einer eindeutigen ID und anderen Eigenschaften.
 1. Wählen Sie eines der Elemente in der Liste aus, um eine JSON-Darstellung der Elementdaten anzuzeigen.
 1. Wählen Sie oben auf der Seite **Neues Element aus**, um ein neues leeres Element zu erstellen.
 1. Ändern Sie den JSON-Code für das neue Element wie folgt, und wählen Sie dann **Speichern** aus.
 
     ```json
     {
-        "address": "1 Any St.",
-        "id": "123456789"
+        "name": "Road Helmet,45",
+        "id": "123456789",
+        "categoryID": "123456789",
+        "SKU": "AB-1234-56",
+        "description": "The product called \"Road Helmet,45\" ",
+        "price": 48.74
     }
     ```
 
 1. Nach dem Speichern des neuen Elements werden zusätzliche Metadateneigenschaften automatisch hinzugefügt.
 
-## <a name="query-the-database"></a>Abfragen der Datenbank
+## Abfragen der Datenbank
 
 1. Wählen Sie auf der Seite **Data Explorer** das Symbol **Neue SQL-Abfrage** aus.
 1. Überprüfen Sie im SQL-Abfrage-Editor die Standardabfrage (`SELECT * FROM c`), und verwenden Sie die Schaltfläche `SELECT * FROM c`, um sie auszuführen.
@@ -63,12 +67,12 @@ Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein
 1. Ändern Sie die Abfrage wie folgt:
 
     ```sql
-    SELECT c.id, c.address
+    SELECT *
     FROM c
-    WHERE CONTAINS(c.address, "Any St.")
+    WHERE CONTAINS(c.name,"Helmet")
     ```
 
-1. Verwenden Sie die Schaltfläche **Abfrage ausführen**, um die überarbeitete Abfrage auszuführen und die Ergebnisse zu überprüfen. Diese enthalten JSON-Entitäten für alle Elemente mit einem Feld **address**, das den Text „Any St.“ enthält.
+1. Verwenden Sie die Schaltfläche **Abfrage ausführen**, um die überarbeitete Abfrage auszuführen und die Ergebnisse zu überprüfen. Diese enthalten JSON-Entitäten für alle Elemente mit einem Feld **Name**, das den Text „Helmet“ enthält.
 1. Schließen Sie SQL-Abfrage-Editor, und verwerfen Sie Ihre Änderungen.
 
     Nun wissen Sie, wie Sie JSON-Entitäten in einer Cosmos DB-Datenbank mithilfe der Data Explorer-Schnittstelle im Azure-Portal erstellen und abfragen können. In einem realen Szenario würde ein Anwendungsentwickler eines der vielen programmiersprachenspezifischen Software Development Kits (SDKs) verwenden, um die NoSQL-API aufzurufen und mit Daten in der Datenbank zu arbeiten.
