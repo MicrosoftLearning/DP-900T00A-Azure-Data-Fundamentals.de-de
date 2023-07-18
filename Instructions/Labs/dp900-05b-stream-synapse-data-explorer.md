@@ -4,17 +4,19 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-azure-synapse-data-explorer"></a>Erkunden des Azure Synapse-Daten-Explorers
+# Erkunden des Azure Synapse-Daten-Explorers
+
+> **Hinweis**: Aufgrund von Produktänderungen gibt es einige bekannte Probleme mit dem Abschnitt **Erstellen einer Datenbank und Erfassungsdaten** dieses Labs. Wir arbeiten daran, diese Probleme zu beheben.
 
 In dieser Übung verwenden Sie den Azure Synapse Daten-Explorer, um Zeitreihendaten zu analysieren.
 
 Dieses Lab dauert ungefähr **25** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="provision-a-synapse-analytics-workspace"></a>Bereitstellen eines Synapse Analytics-Arbeitsbereichs
+## Bereitstellen eines Synapse Analytics-Arbeitsbereichs
 
 > **Tipp**: Wenn Sie bereits über einen Azure Synapse-Arbeitsbereich verfügen, überspringen Sie diesen Abschnitt, und fahren Sie direkt mit dem Abschnitt **[Erstellen eines Daten-Explorer-Pools](#create-a-data-explorer-pool)** fort.
 
@@ -41,7 +43,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 1. Wählen Sie Ihren Synapse-Arbeitsbereich aus, und klicken Sie auf der Seite **Übersicht** der Karte **Synapse Studio öffnen** auf die Option **Öffnen**, um Synapse Studio auf einer neuen Browserregisterkarte zu öffnen. Synapse Studio ist eine webbasierte Schnittstelle, die Sie zum Arbeiten mit Ihrem Synapse Analytics-Arbeitsbereich verwenden können.
 1. Verwenden Sie im linken Bereich von Synapse Studio das Symbol **&rsaquo;&rsaquo;** , um das Menü zu erweitern. Dadurch werden die verschiedenen Seiten in Synapse Studio angezeigt, die Sie zur Verwaltung von Ressourcen und zur Durchführung von Datenanalyseaufgaben verwenden werden.
 
-## <a name="create-a-data-explorer-pool"></a>Erstellen eines Data Explorer-Pools
+## Erstellen eines Data Explorer-Pools
 
 1. Wählen Sie in Synapse Studio die Seite **Verwalten** aus.
 1. Wählen Sie die Registerkarte **Daten-Explorer-Pools** aus, und verwenden Sie dann das Symbol **&#65291; Neu**, um einen neuen Pool mit den folgenden Einstellungen zu erstellen:
@@ -51,7 +53,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 1. Wählen Sie **Weiter: Zusätzliche Einstellungen >** aus, und aktivieren Sie die Einstellung **Streamingerfassung**. So kann der Daten-Explorer neue Daten aus einer Streamingquelle wie z. B. Azure Event Hubs erfassen.
 1. Wählen Sie **Überprüfen und erstellen** aus, um den Daten-Explorer-Pool zu erstellen, und warten Sie dann, bis er bereitgestellt ist (was 15 Minuten oder länger dauern kann. Der Status ändert sich von *Wird erstellt* in *Online*).
 
-## <a name="create-a-database-and-ingest-data"></a>Erstellen einer Datenbank und Erfassen von Daten
+## Erstellen einer Datenbank und Erfassen von Daten
 
 1. Wählen Sie in Synapse Studio die Seite **Daten** aus.
 1. Stellen Sie sicher, dass die Registerkarte **Arbeitsbereich** ausgewählt ist, und wählen Sie bei Bedarf das Symbol **&#8635;** oben links auf der Seite aus, um die Ansicht zu aktualisieren, sodass **Daten-Explorer-Datenbanken** aufgelistet wird.
@@ -92,7 +94,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
     >                 **Tipp**: In diesem Beispiel haben Sie eine sehr kleine Menge an Batchdaten aus einer Datei importiert, um den Zweck dieser Übung zu erfüllen. In Wirklichkeit können Sie mit dem Daten-Explorer viel größere Datenmengen analysieren. Und da Sie die Datenstromerfassung aktiviert haben, könnten Sie den Daten-Explorer auch dazu konfigurieren, Daten aus einer Streamingquelle wie Azure Event Hubs in der Tabelle zu erfassen.
 
-## <a name="use-kusto-query-language-to-query-the-table-in-synapse-studio"></a>Verwenden der Kusto-Abfragesprache zum Abfragen der Tabelle in Synapse Studio
+## Verwenden der Kusto-Abfragesprache zum Abfragen der Tabelle in Synapse Studio
 
 1. Schließen Sie die Azure Data Explorer-Browserregisterkarte, und kehren Sie zu der Registerkarte zurück, die Synapse Studio enthält.
 1. Erweitern Sie auf der Seite **Daten** die Datenbank **iot-data** und ihren Ordner **Tables**. Wählen Sie dann im Menü **...** für die Tabelle **devices** die Option **Neues KQL-Skript** > **1.000 Zeilen verwenden** aus.
@@ -137,7 +139,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 1. Schließen Sie die KQL-Abfrageregisterkarte, und verwerfen Sie Ihre Änderungen.
 
-## <a name="delete-azure-resources"></a>Löschen von Azure-Ressourcen
+## Löschen von Azure-Ressourcen
 
 Nachdem Sie nun mit dem Erkunden von Azure Synapse Analytics fertig sind, löschen Sie die erstellten Ressourcen, um unnötige Azure-Kosten zu vermeiden.
 
