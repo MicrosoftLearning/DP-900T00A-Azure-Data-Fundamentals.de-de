@@ -4,24 +4,24 @@ lab:
   module: Explore fundamentals of data visualization
 ---
 
-# <a name="explore-fundamentals-of-data-visualization-with-power-bi"></a>Erkunden der Grundlagen der Datenvisualisierung mit Power BI
+# Erkunden der Grundlagen der Datenvisualisierung mit Power BI
 
 In dieser Übung verwenden Sie Microsoft Power BI Desktop, um ein Datenmodell und einen Bericht mit interaktiven Datenvisualisierungen zu erstellen.
 
 Dieses Lab dauert ungefähr **20** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-### <a name="install-power-bi-desktop"></a>Installieren von Power BI Desktop
+### Installieren von Power BI Desktop
 
 Wenn Microsoft Power BI Desktop noch nicht auf Ihrem Windows-Computer installiert ist, können Sie es kostenlos herunterladen und installieren.
 
 1. Laden Sie das Installationsprogramm für Power BI Desktop von [https://aka.ms/power-bi-desktop](https://aka.ms/power-bi-desktop?azure-portal=true) herunter.
 1. Wenn die Datei heruntergeladen wurde, öffnen Sie sie, und verwenden Sie den Setup-Assistenten, um Power BI Desktop auf Ihrem Computer zu installieren. Diese Installation kann einige Minuten dauern.
 
-## <a name="import-data"></a>Daten importieren
+## Daten importieren
 
 1. Öffnen Sie Power BI Desktop. Die Anwendungsschnittstelle sollte in etwa wie folgt aussehen:
 
@@ -63,7 +63,7 @@ Wenn Microsoft Power BI Desktop noch nicht auf Ihrem Windows-Computer installier
     https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/orders.csv
     ```
 
-## <a name="explore-a-data-model"></a>Erkunden eines Datenmodells
+## Erkunden eines Datenmodells
 
 Die drei Importierten Datentabellen wurden in ein Datenmodell geladen, das Sie nun erkunden und optimieren werden.
 
@@ -86,14 +86,14 @@ Die drei Importierten Datentabellen wurden in ein Datenmodell geladen, das Sie n
 
     ![Screenshot: Umbenennen der Hierarchie in Power BI](images/rename-hierarchy.png)
 
-1. Wählen Sie am linken Rand die Registerkarte **Daten** und dann im Bereich **Felder** die Tabelle **Customers** (Kunden) aus.
+1. Wählen Sie am linken Rand die Registerkarte **Datenansicht** und dann im Bereich **Daten** die Tabelle **Customers** (Kunden) aus.
 1. Wählen Sie die Spaltenüberschrift **City** (Stadt) aus, und legen Sie die Eigenschaft **Datenkategorie** auf **City** (Stadt) fest:
 
     ![Screenshot: Festlegen einer Datenkategorie in Power BI](images/data-category.png)
 
     Durch diesen Schritt wird sichergestellt, dass die Werte in dieser Spalte als Städtenamen interpretiert werden, was nützlich sein kann, wenn Sie Kartenvisualisierungen verwenden möchten.
 
-## <a name="create-a-report"></a>Erstellen eines Berichts
+## Erstellen eines Berichts
 
 Jetzt sind Sie fast so weit, einen Bericht zu erstellen. Zunächst müssen Sie einige Einstellungen überprüfen, um sicherzustellen, dass alle Visualisierungen aktiviert sind.
 
@@ -103,7 +103,7 @@ Jetzt sind Sie fast so weit, einen Bericht zu erstellen. Zunächst müssen Sie e
 
     Durch diese Einstellung wird sichergestellt, dass Sie Kartenvisualisierungen in Berichte aufnehmen können.
 
-1. Wählen Sie auf der linken Seite die Registerkarte **Bericht** aus, um die Benutzeroberfläche für den Berichtsentwurf anzuzeigen.
+1. Wählen Sie auf der linken Seite die Registerkarte **Berichtansicht** aus, um die Benutzeroberfläche für den Berichtsentwurf anzuzeigen.
 
     ![Screenshot: Registerkarte „Bericht“ in Power BI](images/report-tab.png)
 
@@ -111,11 +111,11 @@ Jetzt sind Sie fast so weit, einen Bericht zu erstellen. Zunächst müssen Sie e
 
     ![Screenshot: Hinzufügen eines Textfelds in Power BI](images/text-box.png)
 
-1. Wählen Sie einen leeren Bereich im Bericht aus, um die Auswahl des Textfelds aufzuheben. Erweitern Sie dann im Bereich **Felder** das Feld **Products** (Produkte), und wählen Sie das Feld **Categorized Products** (Kategorisierte Produkte) aus. Durch diesen Schritt wird dem Bericht eine Tabelle hinzufügt.
+1. Wählen Sie einen leeren Bereich im Bericht aus, um die Auswahl des Textfelds aufzuheben. Erweitern Sie dann im Bereich **Daten** das Feld **Products** (Produkte), und wählen Sie das Feld **Categorized Products** (Kategorisierte Produkte) aus. Durch diesen Schritt wird dem Bericht eine Tabelle hinzufügt.
 
     ![Screenshot: Hinzufügen einer Tabelle mit kategorisierten Produkten zu einem Bericht in Power BI](images/categorized-products-table.png)
 
-1. Mit weiterhin ausgewählter Tabelle erweitern Sie im Bereich **Felder** den Bereich **Orders** (Bestellungen), und wählen Sie **Revenue** (Umsatz) aus. Eine Spalte „Revenue“ (Umsatz) wird der Tabelle hinzugefügt. Möglicherweise müssen Sie die Größe der Tabelle erweitern, damit sie sichtbar wird.
+1. Mit weiterhin ausgewählter Tabelle erweitern Sie im Bereich **Daten** den Bereich **Orders** (Bestellungen), und wählen Sie **Revenue** (Umsatz) aus. Eine Spalte „Revenue“ (Umsatz) wird der Tabelle hinzugefügt. Möglicherweise müssen Sie die Größe der Tabelle erweitern, damit sie sichtbar wird.
 
     Der Umsatz wird in der Währung formatiert, die Sie im Modell angegeben haben. Allerdings haben Sie die Anzahl der Dezimalstellen nicht angegeben, sodass die Werte auch Bruchbeträge enthalten. Für die Visualisierungen, die Sie erstellen werden, spielt das keine Rolle, aber Sie können zur Registerkarte **Modell** oder **Daten** wechseln und bei Bedarf die Dezimalstellen ändern.
 
@@ -125,17 +125,17 @@ Jetzt sind Sie fast so weit, einen Bericht zu erstellen. Zunächst müssen Sie e
 
     ![Screenshot: Gestapeltes Säulendiagramm kategorisierter Produkte mit Umsatz in einem Bericht](images/stacked-column-chart.png)
 
-1. Wählen Sie oberhalb des ausgewählten Säulendiagramms das Symbol **&#8595;** aus, um den Drilldown zu aktivieren. Wählen Sie dann im Diagramm die zweite Spalte, *Road Bikes* (Straßenfahrräder), aus, um einen Drilldown durchzuführen und den Umsatz für die einzelnen Produkte in dieser Kategorie anzuzeigen. Diese Funktion ist möglich, da Sie eine Hierarchie von Kategorien und Produkten definiert haben.
+1. Wählen Sie oberhalb des ausgewählten Säulendiagramms das Symbol **&#8595;** aus, um den Drilldown zu aktivieren. Wählen Sie in der Tabelle die zweite Spalte aus, um einen Drilldown auszuführen und den Umsatz für die einzelnen Produkte in dieser Kategorie anzuzeigen. Diese Funktion ist möglich, da Sie eine Hierarchie von Kategorien und Produkten definiert haben.
 
     ![Screenshot: Säulendiagramm mit Detailinformationen zu Produkten innerhalb einer Kategorie](images/drill-down.png)
 
 1. Verwenden Sie das Symbol **&#x2191;** , um einen Drillup zur Kategorieebene durchzuführen. Wählen Sie dann das Symbol **(** &#8595; **)** aus, um das Drilldownfeature zu deaktivieren.
-1. Wählen Sie einen leeren Bereich des Berichts aus, und wählen Sie dann im Bereich **Felder** das Feld **Menge** in der Tabelle **Orders** (Bestellungen) und das Feld **Kategorie** in der Tabelle **Products** (Produkte) aus. Dieser Schritt führt zu einem weiteren Säulendiagramm, das die Umsatzmenge nach Produktkategorie zeigt.
+1. Wählen Sie einen leeren Bereich des Berichts aus, und wählen Sie dann im Bereich **Daten** das Feld **Menge** in der Tabelle **Orders** (Bestellungen) und das Feld **Category** in der Tabelle **Products** (Produkte) aus. Dieser Schritt führt zu einem weiteren Säulendiagramm, das die Umsatzmenge nach Produktkategorie zeigt.
 1. Wählen Sie bei ausgewähltem neuen Säulendiagramm im Bereich **Visualisierungen** die Option **Kreisdiagramm** aus, ändern Sie dann die Größe des Diagramms, und positionieren Sie es neben dem Säulendiagramm für den Umsatz nach Kategorie.
 
     ![Screenshot: Kreisdiagramm, das die Umsatzmenge nach Kategorie anzeigt](images/category-pie-chart.png)
 
-1. Wählen Sie einen leeren Bereich des Berichts aus, und wählen Sie dann im Bereich **Felder** das Feld **City** (Stadt) in der Tabelle **Customers** (Kunden) und das Feld **Revenue** (Umsatz) in der Tabelle **Products** (Produkte) aus. Dies führt zu einer Karte mit dem Umsatz nach Stadt. Sie können die Visualisierungen nach Bedarf neu anordnen und ihre Größe anpassen:
+1. Wählen Sie einen leeren Bereich des Berichts aus, und wählen Sie dann im Bereich **Daten** das Feld **City** (Stadt) in der Tabelle **Customers** (Kunden) und das Feld **Revenue** (Umsatz) in der Tabelle **Orders** (Bestellungen) aus. Dies führt zu einer Karte mit dem Umsatz nach Stadt. Sie können die Visualisierungen nach Bedarf neu anordnen und ihre Größe anpassen:
 
     ![Screenshot: Karte mit dem Umsatz nach Stadt](images/revenue-map.png)
 
