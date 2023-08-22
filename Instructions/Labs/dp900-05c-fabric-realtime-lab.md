@@ -21,7 +21,7 @@ Erstellen Sie vor dem Arbeiten mit Daten in Fabric einen Arbeitsbereich mit akti
 3. Erstellen Sie einen neuen Arbeitsbereich mit einem Namen Ihrer Wahl, und wählen Sie im Bereich **Erweitert** einen Lizenzierungsmodus mit Fabric-Kapazitäten aus (*Testversion*, *Premium* oder *Fabric*).
 4. Wenn Ihr neuer Arbeitsbereich geöffnet wird, sollte er leer sein.
 
-    ![Screenshot: Leerer Arbeitsbereich in Power BI](./Images/new-workspace.png)
+    ![Screenshot: Leerer Arbeitsbereich in Power BI](./images/new-workspace.png)
 
 ## Erstellen einer KQL-Datenbank
 
@@ -37,7 +37,7 @@ Nachdem Sie nun über einen Arbeitsbereich verfügen, können Sie eine KQL-Daten
 
     Nach etwa einer Minute wird eine neue KQL-Datenbank erstellt:
 
-    ![Screenshot einer neuen KQL-Datenbank.](./Images/kql-database.png)
+    ![Screenshot einer neuen KQL-Datenbank.](./images/kql-database.png)
 
     Derzeit enthält die Datenbank keine Tabellen.
 
@@ -50,14 +50,14 @@ Ereignisstreams bieten eine skalierbare und flexible Möglichkeit zum Erfassen v
 
     Nach kurzer Zeit wird der visuelle Designer für Ihren Ereignisstream angezeigt.
 
-    ![Screenshot: Ereignisstream-Designer.](./Images/eventstream-designer.png)
+    ![Screenshot: Ereignisstream-Designer.](./images/eventstream-designer.png)
 
     Der Zeichenbereich des visuellen Designers zeigt eine Quelle, die eine Verbindung mit Ihrem Ereignisstream herstellt, der wiederum mit einem Ziel verbunden ist.
 
 1. Wählen Sie auf dem Designer-Zeichenbereich in der Liste **Neue Quelle** als Quelle die Option **Beispieldaten** aus. Geben Sie dann im Bereich **Beispieldaten** den Namen **Taxis** an, und wählen Sie die **Yellow Taxi**-Beispieldaten aus (die von Taxifahrten erfassten Daten). Wählen Sie anschließend **Hinzufügen**.
 1. Wählen Sie unter dem Designer-Zeichenbereich die Registerkarte **Datenvorschau** aus, um eine Vorschau der aus der Quelle gestreamten Daten anzuzeigen:
 
-    ![Screenshot: Ereignisstream-Datenvorschau.](./Images/eventstream-preview.png)
+    ![Screenshot: Ereignisstream-Datenvorschau.](./images/eventstream-preview.png)
 
 1. Wählen Sie auf dem Designer-Zeichenbereich in der Liste **Neues Ziel** als Ziel die Option **KQL-Datenbank** aus. Geben Sie dann im Bereich **KQL-Datenbank** den Zielnamen **taxi-data** an, und wählen Sie Ihren Arbeitsbereich und Ihre KQL-Datenbank aus. Wählen Sie dann **Erstellen und konfigurieren** aus.
 1. Wählen Sie im **Assistenten zum Erfassen von Daten** auf der Seite **Ziel**die Option **Neue Tabelle** aus, und geben Sie den Tabellennamen **taxi-data** ein. Wählen Sie dann **Weiter: Quelle** aus.
@@ -66,7 +66,7 @@ Ereignisstreams bieten eine skalierbare und flexible Möglichkeit zum Erfassen v
 1. Warten Sie auf der Seite **Zusammenfassung**, bis die fortlaufende Erfassung eingerichtet wurde, und wählen Sie dann **Schließen** aus.
 1. Vergewissern Sie sich, dass Ihr abgeschlossener Ereignisstream wie folgt aussieht:
 
-    ![Screenshot eines abgeschlossenen Ereignisstreams.](./Images/complete-eventstream.png)
+    ![Screenshot eines abgeschlossenen Ereignisstreams.](./images/complete-eventstream.png)
 
 ## Abfragen von Echtzeitdaten in einer KQL-Datenbank
 
@@ -75,7 +75,7 @@ Ihr Ereignisstream füllt kontinuierlich eine Tabelle in Ihrer KQL-Datenbank auf
 1. Wählen Sie im Menühub auf der linken Seite Ihre KQL-Datenbank aus (oder wählen Sie Ihren Arbeitsbereich aus, und suchen Sie dort Ihre KQL-Datenbank).
 1. Wählen Sie im Menü **...** für die Tabelle **taxi-data** (die von Ihrem Ereignisstream erstellt wurde) die Option **Abfragetabelle > Datensätze, die in den letzten 24 Stunden erfasst wurden** aus.
 
-    ![Screenshot: Menü „Abfragetabelle“ in einer KQL-Datenbank.](./Images/kql-query.png)
+    ![Screenshot: Menü „Abfragetabelle“ in einer KQL-Datenbank.](./images/kql-query.png)
 
 1. Zeigen Sie die Ergebnisse der Abfrage an, bei der es sich um eine KQL-Abfrage wie folgt handelt:
 
@@ -95,7 +95,7 @@ Ihr Ereignisstream füllt kontinuierlich eine Tabelle in Ihrer KQL-Datenbank auf
     ```
 
 1. Verwenden Sie die Schaltfläche **&#9655; Ausführen**, um die Abfrage auszuführen und die Ergebnisse anzuzeigen, die die Anzahl der Taxifahrten für jede Stunde anzeigen.
- 
+
 ## Bereinigen von Ressourcen
 
 Wenn Sie die Untersuchung von Echtzeitanalysen Microsoft Fabric abgeschlossen haben, können Sie den Arbeitsbereich löschen, den Sie für diese Übung erstellt haben.
