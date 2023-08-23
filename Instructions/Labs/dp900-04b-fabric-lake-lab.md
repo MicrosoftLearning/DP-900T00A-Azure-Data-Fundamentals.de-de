@@ -21,7 +21,7 @@ Erstellen Sie vor dem Arbeiten mit Daten in Fabric einen Arbeitsbereich mit akti
 3. Erstellen Sie einen neuen Arbeitsbereich mit einem Namen Ihrer Wahl, und wählen Sie im Bereich **Erweitert** einen Lizenzierungsmodus mit Fabric-Kapazitäten aus (*Testversion*, *Premium* oder *Fabric*).
 4. Wenn Ihr neuer Arbeitsbereich geöffnet wird, sollte er leer sein.
 
-    ![Screenshot: Leerer Arbeitsbereich in Power BI](./Images/new-workspace.png)
+    ![Screenshot: Leerer Arbeitsbereich in Power BI](./images/new-workspace.png)
 
 ## Erstellen eines Lakehouse
 
@@ -37,7 +37,7 @@ Da Sie über einen Arbeitsbereich verfügen, können Sie nun zu *Datentechnik* i
 
     Nach etwa einer Minute wird ein neues Lakehouse erstellt:
 
-    ![Screenshot: Neues Lakehouse](./Images/new-lakehouse.png)
+    ![Screenshot: Neues Lakehouse](./images/new-lakehouse.png)
 
 3. Sehen Sie sich das neue Lakehouse an, und beachten Sie, dass Sie im Bereich **Lakehouse-Explorer** auf der linken Seite Tabellen und Dateien im Lakehouse durchsuchen können:
     - Der Ordner **Tables** enthält Tabellen, die Sie mithilfe von SQL abfragen können. Die Tabellen in einem Microsoft Fabric-Lakehouse basieren auf dem *Delta-Lake*-Open-Source-Dateiformat, das üblicherweise in Apache Spark verwendet wird.
@@ -52,7 +52,7 @@ Eine einfache Möglichkeit zum Erfassen von Daten ist das Verwenden der Aktivit�
 1. Wählen Sie auf der Seite **Start** für Ihr Lakehouse im Menü **Daten abrufen** die Option **Neue Datenpipeline** aus, und erstellen Sie eine neue Datenpipeline mit dem Namen **Ingest Sales Data**.
 1. Wählen Sie im **Assistenten zum Kopieren von Daten** auf der Seite **Datenquelle auswählen** das Beispieldataset **Retail Data Model from Wide World Importers** aus.
 
-    ![Screenshot: Die Seite „Datenquelle auswählen“](./Images/choose-data-source.png)
+    ![Screenshot: Die Seite „Datenquelle auswählen“](./images/choose-data-source.png)
 
 1. Wählen Sie **Weiter** aus, und zeigen Sie die Tabellen in der Datenquelle auf der Seite **Verbindung mit Datenquelle herstellen** an.
 1. Wählen Sie die Tabelle **dimension_stock_item** aus, die Produktdatensätze enthält. Wählen Sie dann **Weiter** aus, um zur Seite **Datenziel auswählen** zu gelangen.
@@ -60,25 +60,25 @@ Eine einfache Möglichkeit zum Erfassen von Daten ist das Verwenden der Aktivit�
 1. Legen Sie die folgenden Datenzieloptionen fest, und wählen Sie dann **Weiter** aus:
     - **Stammordner**: Tabellen
     - **Einstellungen laden**: In neue Tabelle laden
-    - **Name der Zieltabelle**: dimProduct
+    - **Name der Zieltabelle**: dimension_stock_item
     - **Spaltenzuordnungen**: *Standardzuordnungen unverändert übernehmen*
     - **Partition aktivieren**: *Nicht ausgewählt*
-1. Stellen Sie sicher, dass auf der Seite **Überprüfen _ speichern** die Option **Datenübertragung sofort starten** ausgewählt ist, und wählen **Sie dann Speichern + ausführen** aus.
+1. Stellen Sie sicher, dass auf der Seite **Überprüfen + speichern** die Option **Datenübertragung sofort starten** ausgewählt ist, und wählen **Sie dann Speichern + ausführen** aus.
 
     Eine neue Pipeline wird wie folgt mit der Aktivität **Daten kopieren** erstellt:
 
-    ![Screenshot: Eine Pipeline mit der Aktivität „Daten kopieren“](./Images/copy-data-pipeline.png)
+    ![Screenshot: Eine Pipeline mit der Aktivität „Daten kopieren“](./images/copy-data-pipeline.png)
 
     Wenn die Pipeline gestartet wird, können Sie ihren Status im Bereich **Ausgabe** unter dem Pipeline-Designer überwachen. Verwenden Sie das Symbol **&#8635;** (*Aktualisieren*), um den Status zu aktualisieren, und warten Sie, bis der Vorgang erfolgreich abgeschlossen ist.
 
 1. Wählen Sie in der Hubmenüleiste auf der linken Seite Ihr Lakehouse aus.
-1. Erweitern Sie dann auf der Seite **Start** im **Lakehouse-Explorer** die Option **Tabellen**, und vergewissern Sie sich, dass die Tabelle **dimProduct** erstellt wurde.
+1. Erweitern Sie dann auf der Seite **Start** im **Lakehouse-Explorer** die Option **Tabellen**, und vergewissern Sie sich, dass die Tabelle **dimension_stock_item** erstellt wurde.
 
     > **Hinweis**: Wenn die neue Tabelle als *nicht identifiziert* aufgeführt ist, verwenden Sie die Schaltfläche **Aktualisieren** auf der Lakehouse-Symbolleiste, um die Ansicht zu aktualisieren.
 
-1. Wählen Sie die Tabelle **dimProduct** aus, um den Inhalt anzuzeigen.
+1. Wählen Sie die Tabelle **dimension_stock_item** aus, um den Inhalt anzuzeigen.
 
-    ![Screenshot: Tabelle „dimProduct“.](./images/dimProduct.png)
+    ![Screenshot: Tabelle „dimension_stock_item“.](./images/dimProduct.png)
 
 ## Abfragen von Daten in einem Lakehouse
 
@@ -92,7 +92,7 @@ Nachdem Sie nun Daten in einer Tabelle im Lakehouse erfasst haben, können Sie d
 
     ```sql
     SELECT Brand, COUNT(StockItemKey) AS Products
-    FROM dimProduct
+    FROM dimension_stock_item
     GROUP BY Brand
     ```
 
@@ -104,15 +104,15 @@ Nachdem Sie nun Daten in einer Tabelle im Lakehouse erfasst haben, können Sie d
 
 In Microsoft Fabric-Lakehouses sind alle Tabellen in einem Datenmodell organisiert, und Sie können sie zum Erstellen von Visualisierungen und Berichten verwenden.
 
-1. Wählen Sie unten links auf der Seite im Bereich **Erkunden** die Registerkarte **Modell** aus, um das Datenmodell für die Tabellen im Lakehouse anzuzeigen (in diesem Fall gibt es nur eine Tabelle).
+1. Wählen Sie unten links auf der Seite im Bereich **Explorer** die Registerkarte **Modell** aus, um das Datenmodell für die Tabellen im Lakehouse anzuzeigen (in diesem Fall gibt es nur eine Tabelle).
 
     ![Screenshot: Modellseite in einem Fabric-Lakehouse.](./images/fabric-model.png)
 
 1. Wählen Sie auf der Symbolleiste **Neuer Bericht** aus, um eine neue Browserregisterkarte mit dem Power BI-Berichts-Designer zu öffnen.
 1. Im Berichts-Designer:
-    1. Erweitern Sie im Bereich **Daten** die Tabelle **dimProduct**, und wählen Sie die Felder **Brand** und **StockItemKey** aus.
-    1. Wählen Sie im Bereich **Visualisierungen** die Visualisierung **Gestapeltes Balkendiagramm** aus (dies ist die erste aufgeführte Visualisierung). Stellen Sie dann sicher, dass die **Y-Achse** das Feld **Brand** enthält, und ändern Sie die Aggregation in der **X-Achse** in **Count**, sodass sie das Feld **Count of StockItemKey** enthält.
-    
+    1. Erweitern Sie im Bereich **Daten** die Tabelle **dimension_stock_item**, und wählen Sie die Felder **Brand** und **StockItemKey** aus.
+    1. Wählen Sie im Bereich **Visualisierungen** die Visualisierung **Gestapeltes Balkendiagramm** aus (dies ist die erste aufgeführte Visualisierung). Stellen Sie dann sicher, dass die **Y-Achse** das Feld **Brand** enthält, und ändern Sie die Aggregation in der **X-Achse** in **Count**, sodass sie das Feld **Count of StockItemKey** enthält. Ändern Sie schließlich die Größe der Visualisierung im Berichtsbereich so, dass der verfügbare Platz ausgefüllt wird.
+
         ![Screenshot eines Power BI-Berichts](./images/fabric-report.png)
 
     > **Tipp**: Sie können die **>>** -Symbole verwenden, um die Bereiche des Berichts-Designers auszublenden und den Bericht übersichtlicher zu gestalten.
