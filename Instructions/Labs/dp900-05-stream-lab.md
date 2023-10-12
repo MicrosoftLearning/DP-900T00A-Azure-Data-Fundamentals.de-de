@@ -4,17 +4,17 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-azure-stream-analytics"></a>Erkunden von Azure Stream Analytics
+# Erkunden von Azure Stream Analytics
 
 In dieser Übung stellen Sie einen Azure Stream Analytics-Auftrag in Ihrem Azure-Abonnement bereit und verwenden ihn zum Verarbeiten eines Echtzeitdatenstroms.
 
 Dieses Lab dauert ungefähr **15** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="create-azure-resources"></a>Erstellen von Azure-Ressourcen
+## Erstellen von Azure-Ressourcen
 
 1. Melden Sie sich bei Ihrem Azure-Abonnement im [Azure-Portal](https://portal.azure.com) mit den Anmeldeinformationen Ihres Azure-Abonnements an.
 
@@ -40,6 +40,8 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
     bash setup.sh
     ```
 
+    > Ignorieren Sie alle Warnmeldungen zu zukünftigen Änderungen und experimentellen Features.
+
     Warten Sie, während das Skript ausgeführt wird und die folgenden Aktionen durchführt:
 
     1. Installieren der Azure CLI-Erweiterungen, die zum Erstellen von Ressourcen benötigt werden (*Sie können alle Warnungen zu experimentellen Erweiterungen ignorieren*)
@@ -48,7 +50,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
     1. Erstellen eines *Azure-Speicherkontos*, das zur Speicherung der verarbeiteten Daten verwendet wird
     1. Erstellen eines *Azure Stream Analytics*-Auftrags, der die eingehenden Gerätedaten in Echtzeit verarbeitet und die Ergebnisse in das Speicherkonto schreibt
 
-## <a name="explore-the-azure-resources"></a>Erkunden der Azure-Ressourcen
+## Erkunden der Azure-Ressourcen
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com?azure-portal=true) auf der Startseite die Option **Ressourcengruppen** aus, um die Ressourcengruppen in Ihrem Abonnement anzuzeigen. Es sollte auch die über das Setupskript identifizierte Ressourcengruppe **learn*xxxxxxxxxxxxxxxxx...** * angezeigt werden.
 2. Wählen Sie die Ressourcengruppe **learn*xxxxxxxxxxxxxxxxx...** * aus, und überprüfen Sie die darin enthaltenen Ressourcen. Es sollten folgende Elemente vorhanden sein:
@@ -58,11 +60,11 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
     Falls nicht alle drei Ressourcen aufgeführt sind, klicken Sie auf die Schaltfläche **&#8635; Aktualisieren**, bis sie angezeigt werden.
 
- 3. Wählen Sie den Stream Analytics-Auftrag **stream*xxxxxxxxxxxxx*** aus, und sehen Sie sich die Informationen auf der Seite **Übersicht** an. Beachten Sie dabei die folgenden Details:
+3. Wählen Sie den Stream Analytics-Auftrag **stream*xxxxxxxxxxxxx*** aus, und sehen Sie sich die Informationen auf der Seite **Übersicht** an. Beachten Sie dabei die folgenden Details:
     - Der Auftrag umfasst eine *Eingabe* namens **iotinput** und eine *Ausgabe* namens **bloboutput**. Diese verweisen auf den IoT-Hub und das Speicherkonto, der bzw. das vom Setupskript erstellt wurde.
     - Der Auftrag umfasst eine *Abfrage*, die Daten aus der Eingabe **iotinput** liest und sie aggregiert, indem sie alle 10 Sekunden die Anzahl der verarbeiteten Nachrichten zählt und die Ergebnisse in die Ausgabe **bloboutput** schreibt.
 
-## <a name="use-the-resources-to-analyze-streaming-data"></a>Verwenden der Ressourcen zum Analysieren von Streamingdaten
+## Verwenden der Ressourcen zum Analysieren von Streamingdaten
 
 1. Klicken Sie oben auf der Seite **Übersicht** für den Stream Analytics-Auftrag auf die Schaltfläche **&#9655; Starten**, und wählen Sie dann im Bereich **Auftrag starten** die Option **Starten** aus, um den Auftrag zu starten.
 2. Warten Sie auf eine Benachrichtigung, dass der Streamingauftrag erfolgreich gestartet wurde.
