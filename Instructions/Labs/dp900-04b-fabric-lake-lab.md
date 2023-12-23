@@ -45,7 +45,7 @@ Da Sie über einen Arbeitsbereich verfügen, können Sie nun zu *Datentechnik* i
 
     Derzeit sind keine Tabellen oder Dateien im Lakehouse vorhanden.
 
-## Erfassen von Daten
+## Einlesen von Daten
 
 Eine einfache Möglichkeit zum Erfassen von Daten ist das Verwenden der Aktivität **Daten kopieren** in einer Pipeline, um die Daten aus einer Quelle zu extrahieren und in eine Datei im Lakehouse zu kopieren.
 
@@ -113,7 +113,7 @@ In Microsoft Fabric-Lakehouses sind alle Tabellen in einem Datenmodell organisie
     1. Erweitern Sie im Bereich **Daten** die Tabelle **dimension_stock_item**, und wählen Sie die Felder **Brand** und **StockItemKey** aus.
     1. Wählen Sie im Bereich **Visualisierungen** die Visualisierung **Gestapeltes Balkendiagramm** aus (dies ist die erste aufgeführte Visualisierung). Stellen Sie dann sicher, dass die **Y-Achse** das Feld **Brand** enthält, und ändern Sie die Aggregation in der **X-Achse** in **Count**, sodass sie das Feld **Count of StockItemKey** enthält. Ändern Sie schließlich die Größe der Visualisierung im Berichtsbereich so, dass der verfügbare Platz ausgefüllt wird.
 
-        ![Screenshot eines Power BI-Berichts](./images/fabric-report.png)
+        ![Screenshot eines Power BI-Berichts](./images/fabric-report.png)
 
     > **Tipp**: Sie können die **>>** -Symbole verwenden, um die Bereiche des Berichts-Designers auszublenden und den Bericht übersichtlicher zu gestalten.
 
@@ -127,4 +127,4 @@ Wenn Sie die Untersuchung von Microsoft Fabric abgeschlossen haben, können Sie 
 
 1. Wählen Sie auf der Leiste auf der linken Seite das Symbol für Ihren Arbeitsbereich aus, um alle darin enthaltenen Elemente anzuzeigen.
 2. Wählen Sie im Menü **...** auf der Symbolleiste die **Arbeitsbereichseinstellungen** aus.
-3. Klicken Sie im Abschnitt **Andere** auf **Diesen Arbeitsbereich entfernen**.
+3. Wählen Sie im Abschnitt **Andere** die Option **Diesen Arbeitsbereich entfernen** aus.

@@ -102,4 +102,4 @@ Wenn Sie die Untersuchung von Echtzeitanalysen Microsoft Fabric abgeschlossen ha
 
 1. Wählen Sie auf der Leiste auf der linken Seite das Symbol für Ihren Arbeitsbereich aus, um alle darin enthaltenen Elemente anzuzeigen.
 2. Wählen Sie im Menü **...** auf der Symbolleiste die **Arbeitsbereichseinstellungen** aus.
-3. Klicken Sie im Abschnitt **Andere** auf **Diesen Arbeitsbereich entfernen**.
+3. Wählen Sie im Abschnitt **Andere** die Option **Diesen Arbeitsbereich entfernen** aus.
