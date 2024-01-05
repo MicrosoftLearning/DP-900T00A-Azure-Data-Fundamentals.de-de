@@ -22,7 +22,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 1. Öffnen Sie das Azure-Portal unter [https://portal.azure/com](https://portal.azure.com?azure-portal=true), und melden Sie sich mit den Anmeldeinformationen für Ihr Azure-Abonnement an.
 
-    >                 **Hinweis**: Stellen Sie sicher, dass Sie sich im Verzeichnis mit Ihrem Abonnement befinden. Dies wird oben rechts unter Ihrer Benutzer-ID angegeben. Falls nicht, klicken Sie auf das Benutzersymbol, und wechseln Sie das Verzeichnis.
+    > **Hinweis**: Stellen Sie sicher, dass Sie sich im Verzeichnis mit Ihrem Abonnement befinden. Dies wird oben rechts unter Ihrer Benutzer-ID angegeben. Falls nicht, klicken Sie auf das Benutzersymbol, und wechseln Sie das Verzeichnis.
 
 1. Verwenden Sie das Symbol **&#65291; Ressource erstellen** auf der **Startseite** des Azure-Portals, um eine neue Ressource zu erstellen.
 1. Suchen Sie nach *Azure Synapse Analytics*, und erstellen Sie eine neue **Azure Synapse Analytics-Ressource** mit den folgenden Einstellungen:
@@ -35,7 +35,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
         - **Kontoname**: *Erstellen Sie ein neues Konto mit einem eindeutigen Namen, z. B. „datalake<Ihr_Name>“.*
         - **Dateisystemname**: *Erstellen Sie ein neues Dateisystem mit einem eindeutigen Namen, z. B. „fs<Ihr_Name>“.*
 
-    >                 **Hinweis**: Ein Synapse Analytics-Arbeitsbereich erfordert zwei Ressourcengruppen in Ihrem Azure-Abonnement: eine für Ressourcen, die Sie explizit erstellen, und eine andere für verwaltete Ressourcen, die vom Dienst verwendet werden. Außerdem ist ein Data Lake-Speicherkonto erforderlich, in dem Daten, Skripts und andere Artefakte gespeichert werden.
+    > **Hinweis**: Ein Synapse Analytics-Arbeitsbereich erfordert zwei Ressourcengruppen in Ihrem Azure-Abonnement: eine für Ressourcen, die Sie explizit erstellen, und eine andere für verwaltete Ressourcen, die vom Dienst verwendet werden. Außerdem ist ein Data Lake-Speicherkonto erforderlich, in dem Daten, Skripts und andere Artefakte gespeichert werden.
 
 1. Wenn Sie diese Details eingegeben haben, klicken Sie auf **Überprüfen + Erstellen** und dann auf **Erstellen**, um den Arbeitsbereich zu erstellen.
 1. Warten Sie, bis der Arbeitsbereich erstellt wurde. Dies kann etwa fünf Minuten dauern.
@@ -92,7 +92,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
     Wenn die Ergebnisse hiermit übereinstimmen, haben Sie die Tabelle **devices** erfolgreich aus den Daten in der Datei erstellt.
 
-    >                 **Tipp**: In diesem Beispiel haben Sie eine sehr kleine Menge an Batchdaten aus einer Datei importiert, um den Zweck dieser Übung zu erfüllen. In Wirklichkeit können Sie mit dem Daten-Explorer viel größere Datenmengen analysieren. Und da Sie die Datenstromerfassung aktiviert haben, könnten Sie den Daten-Explorer auch dazu konfigurieren, Daten aus einer Streamingquelle wie Azure Event Hubs in der Tabelle zu erfassen.
+    > **Tipp**: In diesem Beispiel haben Sie eine sehr kleine Menge an Batchdaten aus einer Datei importiert, um den Zweck dieser Übung zu erfüllen. In Wirklichkeit können Sie mit dem Daten-Explorer viel größere Datenmengen analysieren. Und da Sie die Datenstromerfassung aktiviert haben, könnten Sie den Daten-Explorer auch dazu konfigurieren, Daten aus einer Streamingquelle wie Azure Event Hubs in der Tabelle zu erfassen.
 
 ## Verwenden der Kusto-Abfragesprache zum Abfragen der Tabelle in Synapse Studio
 
