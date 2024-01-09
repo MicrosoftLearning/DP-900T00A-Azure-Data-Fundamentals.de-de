@@ -35,9 +35,20 @@ Nachdem Sie nun über einen Arbeitsbereich verfügen, können Sie eine KQL-Daten
 
 2. Erstellen Sie auf der Startseite von Echtzeitanalysen eine neue **KQL-Datenbank** mit einem Namen Ihrer Wahl.
 
-    Nach etwa einer Minute wird eine neue KQL-Datenbank erstellt:
+    ![Screenshot des RTA-Editors mit hervorgehobener Option „KQL DB erstellen“](./images/create-kql-db.png)
+
+   Sie sehen einen Dashboardbildschirm und wählen dann oben die Schaltfläche „KQL-Datenbank“ aus.
 
     ![Screenshot einer neuen KQL-Datenbank.](./images/kql-database.png)
+
+    Nach der Auswahl wird das Dialogfeld ***Neue KQL-Datenbank*** angezeigt, in dem Sie Ihrer KQL-Datenbank einen Namen geben.
+
+    ![Screenshot eines neuen Dialogfelds für den Namen der KQL-Datenbank](./images/name-kql-db.png)
+
+   - Nennen Sie die Datenbank in diesem Szenario wie folgt: `my_kql_db`
+   - Klicken Sie auf ***Erstellen***.
+  
+    Nach etwa einer Minute wird eine neue KQL-Datenbank erstellt:
 
     Derzeit enthält die Datenbank keine Tabellen.
 
@@ -91,7 +102,7 @@ Ihr Ereignisstream füllt kontinuierlich eine Tabelle in Ihrer KQL-Datenbank auf
     ```kql
     // This query returns the number of taxi pickups per hour
     ['taxi-data']
-    | summarize PickupCount = count() by bin(tpep_pickup_datetime, 1h)
+    | summarize PickupCount = count() by bin(todatetime(tpep_pickup_datetime), 1h)
     ```
 
 1. Verwenden Sie die Schaltfläche **&#9655; Ausführen**, um die Abfrage auszuführen und die Ergebnisse anzuzeigen, die die Anzahl der Taxifahrten für jede Stunde anzeigen.
