@@ -84,9 +84,9 @@ Eine einfache Möglichkeit zum Erfassen von Daten ist das Verwenden der Aktivit�
 
 Nachdem Sie nun Daten in einer Tabelle im Lakehouse erfasst haben, können Sie diese mithilfe von SQL abfragen.
 
-1. Wechseln Sie oben rechts auf der Lakehouse-Seite zu **SQL-Endpunkt** für Ihr Lakehouse.
+1. Wechseln Sie oben rechts auf der Lakehouse-Seite zu **SQL-Analyseendpunkt** für Ihr Lakehouse.
 
-    ![Screenshot: Menü für den SQL-Endpunkt.](./images/endpoint-switcher.png)
+    ![Screenshot: Menü für den SQL-Analyseendpunkt](./images/endpoint-switcher.png)
 
 1. Wählen Sie auf der Symbolleiste **Neue SQL-Abfrage** aus. Geben Sie dann den folgenden SQL-Code in den Abfrage-Editor ein:
 
@@ -102,7 +102,7 @@ Nachdem Sie nun Daten in einer Tabelle im Lakehouse erfasst haben, können Sie d
 
 ## Visualisieren von Daten in einem Lakehouse
 
-In Microsoft Fabric-Lakehouses sind alle Tabellen in einem Datenmodell organisiert, und Sie können sie zum Erstellen von Visualisierungen und Berichten verwenden.
+In Microsoft Fabric-Lakehouses sind alle Tabellen in einem semantischen Datenmodell organisiert, das Sie zum Erstellen von Visualisierungen und Berichten verwenden können.
 
 1. Wählen Sie unten links auf der Seite im Bereich **Explorer** die Registerkarte **Modell** aus, um das Datenmodell für die Tabellen im Lakehouse anzuzeigen (in diesem Fall gibt es nur eine Tabelle).
 
