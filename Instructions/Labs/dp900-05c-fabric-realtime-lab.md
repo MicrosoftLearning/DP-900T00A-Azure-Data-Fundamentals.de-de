@@ -27,36 +27,23 @@ Erstellen Sie vor dem Arbeiten mit Daten in Fabric einen Arbeitsbereich mit akti
 
 Nachdem Sie nun über einen Arbeitsbereich verfügen, können Sie eine KQL-Datenbank erstellen, um Echtzeitdaten zu speichern.
 
-1. Wechseln Sie unten links im Portal zur Benutzeroberfläche **Echtzeitanalyse**.
+1. Wechseln Sie unten links im Portal zur Benutzeroberfläche **Echtzeitintelligenz**.
 
     ![Screenshot: Menü zum Wechseln der Benutzeroberfläche.](./images/fabric-real-time.png)
 
-    Die Startseite von Echtzeitanalysen enthält Kacheln zum Erstellen häufig verwendeter Ressourcen für die Analyse von Echtzeitdaten.
+    Die Startseite von Echtzeitintelligenz enthält Kacheln zum Erstellen häufig verwendeter Ressourcen für die Analyse von Echtzeitdaten.
 
-2. Erstellen Sie auf der Startseite von Echtzeitanalysen eine neue **KQL-Datenbank** mit einem Namen Ihrer Wahl.
+2. Erstellen Sie auf der Startseite der Echtzeitintelligenz ein neues **Eventhouse** mit einem Namen Ihrer Wahl.
 
     ![Screenshot des RTA-Editors mit hervorgehobener Option „KQL DB erstellen“](./images/create-kql-db.png)
 
-   Sie sehen einen Dashboardbildschirm und wählen dann oben die Schaltfläche „KQL-Datenbank“ aus.
-
-    ![Screenshot einer neuen KQL-Datenbank.](./images/kql-database.png)
-
-    Nach der Auswahl wird das Dialogfeld ***Neue KQL-Datenbank*** angezeigt, in dem Sie Ihrer KQL-Datenbank einen Namen geben.
-
-    ![Screenshot eines neuen Dialogfelds für den Namen der KQL-Datenbank](./images/name-kql-db.png)
-
-   - Nennen Sie die Datenbank in diesem Szenario wie folgt: `my_kql_db`
-   - Klicken Sie auf ***Erstellen***.
-  
-    Nach etwa einer Minute wird eine neue KQL-Datenbank erstellt:
-
-    Derzeit enthält die Datenbank keine Tabellen.
+    Das Eventhouse wird verwendet, um Ihre Datenbanken in Projekten zu gruppieren und zu verwalten. Eine leere KQL-Datenbank wird automatisch mit dem Namen des Eventhouses erstellt. Wir fügen ihr später in dieser Übung Daten hinzu.
 
 ## Erstellen eines Ereignisstreams
 
 Ereignisstreams bieten eine skalierbare und flexible Möglichkeit zum Erfassen von Echtzeitdaten aus einer Streamingquelle.
 
-1. Wählen Sie in der Menüleiste links die Seite **Start** für die Echtzeitanalysen-Benutzeroberfläche aus.
+1. Wählen Sie in der Menüleiste links die Seite **Start** für die Echtzeitintelligenz-Benutzeroberfläche aus.
 1. Wählen Sie auf der Startseite die Kachel aus, um einen neuen **Ereignisstream** mit einem Namen Ihrer Wahl zu erstellen.
 
     Nach kurzer Zeit wird der visuelle Designer für Ihren Ereignisstream angezeigt.
@@ -70,11 +57,7 @@ Ereignisstreams bieten eine skalierbare und flexible Möglichkeit zum Erfassen v
 
     ![Screenshot: Ereignisstream-Datenvorschau.](./images/eventstream-preview.png)
 
-1. Wählen Sie auf dem Designer-Zeichenbereich in der Liste **Neues Ziel** als Ziel die Option **KQL-Datenbank** aus. Geben Sie dann im Bereich **KQL-Datenbank** den Zielnamen **taxi-data** an, und wählen Sie Ihren Arbeitsbereich und Ihre KQL-Datenbank aus. Wählen Sie dann **Erstellen und konfigurieren** aus.
-1. Wählen Sie im **Assistenten zum Erfassen von Daten** auf der Seite **Ziel**die Option **Neue Tabelle** aus, und geben Sie den Tabellennamen **taxi-data** ein. Wählen Sie dann **Weiter: Quelle** aus.
-1. Überprüfen Sie auf der Seite **Quelle** den Standardnamen der Datenverbindung, und wählen Sie dann **Weiter: Schema** aus.
-1. Ändern Sie auf der Seite **Schema** das **Datenformat** von „TXT“ in **JSON**, und zeigen Sie die Vorschau an, um zu überprüfen, ob dieses Format zu mehreren Datenspalten führt. Wählen Sie anschließend **Weiter: Zusammenfassung** aus.
-1. Warten Sie auf der Seite **Zusammenfassung**, bis die fortlaufende Erfassung eingerichtet wurde, und wählen Sie dann **Schließen** aus.
+1. Wählen Sie auf dem Designer-Zeichenbereich in der Liste **Neues Ziel** als Ziel die Option **KQL-Datenbank** aus. Geben Sie dann im Bereich **KQL-Datenbank** den Zielnamen **taxi-data** an, und wählen Sie Ihren Arbeitsbereich und Ihre KQL-Datenbank aus. Wählen Sie unter „Zieltabelle“ **Neu erstellen** aus, und geben Sie den Tabellennamen **taxi-data** ein. Wählen Sie dann **Hinzufügen** aus.
 1. Vergewissern Sie sich, dass Ihr abgeschlossener Ereignisstream wie folgt aussieht:
 
     ![Screenshot eines abgeschlossenen Ereignisstreams.](./images/complete-eventstream.png)
