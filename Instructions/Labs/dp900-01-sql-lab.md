@@ -4,17 +4,17 @@ lab:
   module: Explore relational data in Azure
 ---
 
-# <a name="explore-azure-sql-database"></a>Einführung in Azure SQL-Datenbank
+# Einführung in Azure SQL-Datenbank
 
 In dieser Übung stellen Sie eine Azure SQL-Datenbankressource in Ihrem Azure-Abonnement bereit und verwenden dann SQL, um die Tabellen in einer relationalen Datenbank abzufragen.
 
 Dieses Lab dauert ungefähr **15** Minuten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## Vorbereitung
 
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
 
-## <a name="provision-an-azure-sql-database-resource"></a>Bereitstellen einer Azure SQL-Datenbankressource
+## Bereitstellen einer Azure SQL-Datenbankressource
 
 1. Klicken Sie im [Azure-Portal](https://portal.azure.com?azure-portal=true) links oben auf **&#65291; Ressource erstellen**, und suchen Sie nach *Azure SQL*. Klicken Sie auf der angezeigten Seite **Azure SQL** auf **Erstellen**.
 
@@ -26,7 +26,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
     - **Abonnement**: Wählen Sie Ihr Azure-Abonnement.
     - **Ressourcengruppe**: Erstellen Sie eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
     - **Datenbankname**: *AdventureWorks*
-    -                 **Server**: Wählen Sie die Option **Neu erstellen** aus, und erstellen Sie einen neuen Server mit einem eindeutigen Namen an einem verfügbaren Standort Ihrer Wahl. Verwenden Sie die **SQL-Authentifizierung**, und geben Sie Ihren Namen als Serveradministrator und ein ausreichend komplexes Kennwort an. Notieren Sie sich das Kennwort, da sie es später benötigen.
+    - **Server**: Wählen Sie die Option **Neu erstellen** aus, und erstellen Sie einen neuen Server mit einem eindeutigen Namen an einem verfügbaren Standort Ihrer Wahl. Verwenden Sie die **SQL-Authentifizierung**, und geben Sie Ihren Namen als Serveradministrator und ein ausreichend komplexes Kennwort an. Notieren Sie sich das Kennwort, da sie es später benötigen.
     - **Möchten Sie einen Pool für elastische SQL-Datenbanken verwenden?**: *Nein*
     - **Workloadumgebung**: Entwicklung
     - **Compute + Speicher**: Lassen Sie den Wert unverändert.

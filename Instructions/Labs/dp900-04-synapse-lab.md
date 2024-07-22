@@ -70,9 +70,9 @@ Eine der wichtigsten Aufgaben, die Sie mit Azure Synapse Analytics ausführen k�
         - **Authentifizierungstyp**: Anonym
 4. Stellen Sie nach dem Erstellen der Verbindung sicher, dass im Teilschritt **Quelle/Dataset** die folgenden Einstellungen ausgewählt sind, und klicken Sie dann auf **Weiter >**:
     - **Relative URL**: *Nicht ausfüllen*
-    - **Anforderungsmethode:** GET
+    - **Anforderungsmethode**: GET
     - **Zusätzliche Kopfzeilen**: *Nicht ausfüllen*
-    - **Binärkopie**: <u>Nicht</u> ausgewählt
+    - **Binärkopie**: <u>Nicht</u>ausgewählt
     - **Anforderungstimeout**: *Nicht ausfüllen*
     - **Maximal zulässige Anzahl paralleler Verbindungen**: *Nicht ausfüllen*
 5. Wählen Sie im Schritt **Quelle** im Teilschritt **Konfiguration** die Option **Vorschaudaten** aus, um eine Vorschau der von Ihrer Pipeline erfassten Produktdaten anzuzeigen, und schließen Sie dann die Vorschau.
@@ -102,7 +102,7 @@ Eine der wichtigsten Aufgaben, die Sie mit Azure Synapse Analytics ausführen k�
 10. Konfigurieren Sie im Schritt **Einstellungen** die folgenden Einstellungen, und klicken Sie dann auf **Weiter >**.
     - **Aufgabenname**: Kopieren von Produkten
     - **Aufgabenbeschreibung**: Kopieren von Produktdaten
-    - **Fehlertoleranz **: *Nicht ausfüllen*
+    - **Fehlertoleranz**: *Nicht ausfüllen*
     - **Protokollierung aktivieren**: <u>Nicht</u> ausgewählt
     - **Staging aktivieren**: <u>Nicht</u> ausgewählt
 11. Lesen Sie im Schritt **Überprüfen und fertig stellen** im Teilschritt **Überprüfen** die Zusammenfassung, und klicken Sie dann auf **Weiter >**.
@@ -138,7 +138,7 @@ Nachdem Sie nun einige Daten in Ihrem Arbeitsbereich erfasst haben, können Sie 
 
     | C1 | c2 | c3 | c4 |
     | -- | -- | -- | -- |
-    | ProductID | ProductName | Category | ListPrice |
+    | ProductID | ProductName | Kategorie | ListPrice |
     | 771 | Mountain-100 Silver, 38 | Mountainbikes | 3399.9900 |
     | 772 | Mountain-100 Silver, 42 | Mountainbikes | 3399.9900 |
     | ... | ... | ... | ... |
@@ -159,7 +159,7 @@ Nachdem Sie nun einige Daten in Ihrem Arbeitsbereich erfasst haben, können Sie 
 
     Die Ergebnisse sehen nun wie folgt aus:
 
-    | ProductID | ProductName | Category | ListPrice |
+    | ProductID | ProductName | Kategorie | ListPrice |
     | -- | -- | -- | -- |
     | 771 | Mountain-100 Silver, 38 | Mountainbikes | 3399.9900 |
     | 772 | Mountain-100 Silver, 42 | Mountainbikes | 3399.9900 |
@@ -182,7 +182,7 @@ Nachdem Sie nun einige Daten in Ihrem Arbeitsbereich erfasst haben, können Sie 
 
 7. Führen Sie die geänderte Abfrage aus, die ein Resultset zurückgeben sollte, das die folgende Produktanzahl in den jeweiligen Kategorien enthält:
 
-    | Category | ProductCount |
+    | Kategorie | ProductCount |
     | -- | -- |
     | Trägershorts | 3 |
     | Fahrradträger | 1 |
@@ -243,7 +243,7 @@ Während SQL eine gängige Sprache zum Abfragen strukturierter Datasets ist, fin
 
     | _c0_ | _c1_ | _c2_ | _c3_ |
     | -- | -- | -- | -- |
-    | ProductID | ProductName | Category | ListPrice |
+    | ProductID | ProductName | Kategorie | ListPrice |
     | 771 | Mountain-100 Silver, 38 | Mountainbikes | 3399.9900 |
     | 772 | Mountain-100 Silver, 42 | Mountainbikes | 3399.9900 |
     | ... | ... | ... | ... |
@@ -261,7 +261,7 @@ Während SQL eine gängige Sprache zum Abfragen strukturierter Datasets ist, fin
 
 10. Führen Sie die Zelle erneut aus, und überprüfen Sie, ob die Ergebnisse wie folgt aussehen:
 
-    | ProductID | ProductName | Category | ListPrice |
+    | ProductID | ProductName | Kategorie | ListPrice |
     | -- | -- | -- | -- |
     | 771 | Mountain-100 Silver, 38 | Mountainbikes | 3399.9900 |
     | 772 | Mountain-100 Silver, 42 | Mountainbikes | 3399.9900 |
@@ -293,9 +293,9 @@ Während SQL eine gängige Sprache zum Abfragen strukturierter Datasets ist, fin
 
 ## Löschen von Azure-Ressourcen
 
-Wenn Sie der Erkundung von Azure Synapse Analytics fertig sind, löschen Sie die erstellten Ressourcen, um unnötige Azure-Kosten zu vermeiden.
+Wenn Sie sich mit Azure Synapse Analytics vertraut gemacht haben, sollten Sie die erstellten Ressourcen löschen, um unnötige Azure-Kosten zu vermeiden.
 
-1. Schließen Sie die Synapse Studio-Registerkarte im Browser, und kehren Sie zum Azure-Portal zurück.
+1. Schließen Sie die Registerkarte mit Synapse Studio, und kehren Sie zum Azure-Portal zurück.
 2. Wählen Sie auf der **Startseite** des Azure-Portals die Option **Ressource erstellen** aus.
 3. Wählen Sie die Ressourcengruppe für Ihren Synapse Analytics-Arbeitsbereich (nicht die verwaltete Ressourcengruppe) aus, und überprüfen Sie, ob sie den Synapse-Arbeitsbereich, das Speicherkonto und den Spark-Pool für Ihren Arbeitsbereich enthält.
 4. Wählen Sie oben auf der Seite **Übersicht** für Ihre Ressourcengruppe die Option **Ressourcengruppe löschen** aus.
