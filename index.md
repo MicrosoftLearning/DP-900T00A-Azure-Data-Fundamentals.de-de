@@ -4,7 +4,7 @@ permalink: index.html
 layout: home
 ---
 
-# <a name="azure-data-fundamentals-exercises"></a>Übungen zu Azure Data Fundamentals
+# Übungen zu Azure Data Fundamentals
 
 Diese Praxisübungen sind dafür konzipiert, die Schulungsinhalte auf [Microsoft Learn](https://docs.microsoft.com/training/) zu ergänzen.
 
