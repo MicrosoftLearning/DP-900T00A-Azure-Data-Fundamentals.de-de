@@ -19,7 +19,7 @@ Dieses Lab dauert ungefähr **25** Minuten.
 Erstellen Sie vor dem Arbeiten mit Daten in Fabric einen Arbeitsbereich mit aktivierter Fabric-Testversion.
 
 1. Melden Sie sich bei [Microsoft Fabric](https://app.fabric.microsoft.com) unter `https://app.fabric.microsoft.com` an.
-1. Wechseln Sie in der Menüleiste unten links zur **Datentechnik**-Erfahrung.
+1. Wechseln Sie in der Menüleiste unten links zur Erfahrung **Datentechnik**.
 
     ![Screenshot: Menü zum Wechseln der Benutzeroberfläche.](./images/fabric-switcher.png)
 
@@ -114,7 +114,7 @@ In Microsoft Fabric-Lakehouses sind alle Tabellen in einem semantischen Datenmod
 
 1. Wählen Sie im Menü **Datei** die Option **Speichern**, um den Bericht als **Taxi-Fahrten-Bericht** in Ihrem Fabric-Arbeitsbereich zu speichern.
 
-    Sie können die Browserregisterkarte mit dem Bericht nun schließen, um zu Ihrem Lakehouse zurückzukehren. Sie finden den Bericht auf der Seite für Ihren Arbeitsbereich im Microsoft Fabric-Portal.
+    Sie finden den Bericht auf der Seite für Ihren Arbeitsbereich im Microsoft Fabric-Portal.
 
 ## Bereinigen von Ressourcen
 
