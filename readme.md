@@ -1,3 +1,11 @@
+#README
+
+We've turned off the ability to report issues directly on this repo and do not monitor PRs.
+
+Provide feedback here: https://aka.ms/provide-feedback
+
+Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
+
 # Microsoft Azure-Datengrundlagen
 
 Dieses Repository enthält die Übungen für das Praxislab zum Microsoft-Kurs [DP-900 *Microsoft Azure Data Fundamentals*](https://docs.microsoft.com/en-us/learn/certifications/courses/dp-900t00) und den [Selbstlernkursen in Microsoft Learn](https://docs.microsoft.com/en-us/users/23110622/collections/0kjyh8rn5gdrjj/). Diese Labs begleiten die Lernmaterialen und erleichtern die praktische Anwendung der beschriebenen Technologien. 
