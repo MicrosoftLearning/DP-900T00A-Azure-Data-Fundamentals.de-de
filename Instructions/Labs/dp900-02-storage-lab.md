@@ -42,7 +42,7 @@ Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Conta
     *Wenn die JSON-Datei in Ihrem Browser angezeigt wird, speichern Sie die Seite als **product1.json**.*
 
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
-1. Wählen Sie auf der Seite **Container** die Option **&#65291; Container** aus, und fügen Sie einen neuen Container namens **data** mit der öffentlichen Zugriffsebene **Privat (kein anonymer Zugriff)** hinzu.
+1. Wählen Sie auf der Seite **Container** die Option **&#65291; Container** und fügen Sie einen neuen Container mit dem Namen **Daten** mit der anonymen Zugriffsebene **Privat (kein anonymer Zugriff)** hinzu.
 1. Wenn der Container **data** erstellt wurde, überprüfen Sie, ob er auf der Seite **Container** aufgeführt ist.
 1. Wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus. Diese Seite enthält eine browserbasierte Benutzeroberfläche, mit der Sie mit den Daten in Ihrem Speicherkonto arbeiten können.
 1. Wählen Sie auf der Seite des Speicherbrowsers **Blobcontainer** aus, und überprüfen Sie, ob Ihr Container **data** aufgeführt ist.
@@ -66,7 +66,7 @@ Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Conta
 
 Mit der Azure Data Lake Store Gen2-Unterstützung können Sie hierarchische Ordner verwenden, um den Zugriff auf Blobs zu organisieren und zu verwalten. Außerdem können Sie mit Azure Blob Storage verteilte Dateisysteme für gängige Big Data-Analyseplattformen hosten.
 
-1. Laden Sie die JSON-Datei [product2.json](https://aka.ms/product2.json?azure-portal=true) von `https://aka.ms/product2.json` herunter, und speichern Sie sie auf Ihrem Computer in dem Ordner, in den Sie zuvor **product1.json** heruntergeladen haben. Sie laden sie später in Blob Storage hoch.
+1. Laden Sie die JSON-Datei [product2.json](https://aka.ms/product2.json?azure-portal=true) von `https://aka.ms/product2.json` herunter und speichern Sie sie auf Ihrem Computer in demselben Ordner, in dem Sie zuvor **product1.json** heruntergeladen haben. Sie laden sie später in Blob Storage hoch.
 1. Scrollen Sie im Azure-Portal auf der Seite Ihres Speicherkontos links nach unten zum Abschnitt **Einstellungen**, und wählen Sie **Data Lake Gen2-Upgrade** aus.
 1. Erweitern Sie die einzelnen Schritte auf der Seite **Data Lake Gen2-Upgrade**, und führen Sie sie aus, um ein Upgrade Ihres Speicherkontos durchzuführen und somit den hierarchischen Namespace zu aktivieren und Azure Data Lake Storage Gen 2 zu unterstützen. Dieser Vorgang kann einige Zeit dauern.
 1. Wenn das Upgrade abgeschlossen ist, wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus, und navigieren Sie zurück zum Stamm Ihres Blobcontainers **data**, der weiterhin den Ordner **product_data** enthält.
@@ -85,6 +85,7 @@ Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Dateifreigaben** aus.
 1. Wählen Sie auf der Seite „Dateifreigaben“ die Option **&#65291; Dateifreigabe** aus, und fügen Sie mithilfe der Ebene **Transaktion optimiert** eine neue Dateifreigabe namens **files** hinzu.
+2. Wählen Sie **Weiter: Backup >** und deaktivieren Sie das Backup. Wählen Sie **dann "Überprüfen" und "Erstellen" aus**.
 1. Öffnen Sie ihre neue Freigabe **files** in den **Dateifreigaben**.
 1. Wählen Sie oben auf der Seite **Verbinden** aus. Beachten Sie dann, dass der Bereich **Verbinden** Registerkarten für gängige Betriebssysteme (Windows, Linux und macOS) enthält, die Skripts enthalten, die Sie ausführen können, um von einem Clientcomputer aus eine Verbindung mit dem freigegebenen Ordner herzustellen.
 1. Schließen Sie den Bereich **Verbinden** und dann die Seite **files**, um zur Seite **Dateifreigaben** für Ihr Azure-Speicherkonto zurückzukehren.
