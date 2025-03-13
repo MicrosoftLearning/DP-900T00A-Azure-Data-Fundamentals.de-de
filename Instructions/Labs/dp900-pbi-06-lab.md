@@ -10,11 +10,7 @@ In dieser Übung verwenden Sie Microsoft Power BI Desktop, um ein Datenmodell un
 
 Dieses Lab dauert ungefähr **20** Minuten.
 
-## Vorbereitung
-
-Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem Sie Administratorzugriff besitzen.
-
-### Installieren von Power BI Desktop
+## Installieren von Power BI Desktop
 
 Wenn Microsoft Power BI Desktop noch nicht auf Ihrem Windows-Computer installiert ist, können Sie es kostenlos herunterladen und installieren.
 
@@ -86,7 +82,7 @@ Die drei Importierten Datentabellen wurden in ein Datenmodell geladen, das Sie n
 
     ![Screenshot: Umbenennen der Hierarchie in Power BI](images/rename-hierarchy.png)
 
-1. Wählen Sie am linken Rand die Registerkarte **Datenansicht** und dann im Bereich **Daten** die Tabelle **Customers** (Kunden) aus.
+1. Wählen Sie am linken Rand die Registerkarte **Tabellenansicht** und wählen Sie dann im Bereich **Daten** die Tabelle **Kundschaft**.
 1. Wählen Sie die Spaltenüberschrift **City** (Stadt) aus, und legen Sie die Eigenschaft **Datenkategorie** auf **City** (Stadt) fest:
 
     ![Screenshot: Festlegen einer Datenkategorie in Power BI](images/data-category.png)
