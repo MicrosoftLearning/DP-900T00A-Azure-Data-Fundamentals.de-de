@@ -1,99 +1,123 @@
 ---
 lab:
   title: Erkunden von Echtzeitanalysen in Microsoft Fabric
-  module: Explore fundamentals of large-scale data analytics
+  module: Explore real-time analytics in Microsoft Fabric
 ---
 
 # Erkunden von Echtzeitanalysen in Microsoft Fabric
 
-In dieser Übung erkunden Sie Echtzeitanalysen in Microsoft Fabric.
+Microsoft Fabric bietet Echtzeitintelligenz. Sie können damit analytische Lösungen für Echtzeit-Datenströme erstellen. In dieser Übung verwenden Sie die Real-Time Intelligence-Funktionen von Microsoft Fabric, um einen Echtzeit-Datenstrom eines Taxiunternehmens aufzunehmen, zu analysieren und zu visualisieren.
 
-Dieses Lab dauert ungefähr **25** Minuten.
+Dieses Lab dauert ungefähr **30** Minuten.
 
-> **Hinweis:** Sie benötigen eine Microsoft Fabric-Lizenz, um diese Übung durchführen zu können. Weitere Informationen zum Aktivieren einer kostenlosen Fabric-Testlizenz finden Sie unter [Erste Schritte mit Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial). Dazu benötigen Sie ein *Schul-* , *Geschäfts-* oder Unikonto von Microsoft. Wenn Sie über kein Microsoft-Konto verfügen, können Sie sich [für eine kostenlose Testversion von Microsoft Office 365 E3 oder höher registrieren](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
+> **Hinweis**: Sie benötigen einen [Microsoft Fabric-Tenant](https://learn.microsoft.com/fabric/get-started/fabric-trial), um diese Übung durchzuführen.
 
 ## Erstellen eines Arbeitsbereichs
 
-Erstellen Sie vor dem Arbeiten mit Daten in Fabric einen Arbeitsbereich mit aktivierter Fabric-Testversion.
+Bevor Sie mit Daten in Fabric arbeiten, müssen Sie einen Arbeitsbereich mit aktivierter Fabric-Kapazität erstellen.
 
-1. Melden Sie sich bei [Microsoft Fabric](https://app.fabric.microsoft.com) unter `https://app.fabric.microsoft.com` an.
-2. Wählen Sie auf der Menüleiste auf der linken Seite **Arbeitsbereiche** aus (Symbol ähnelt &#128455;).
-3. Erstellen Sie einen neuen Arbeitsbereich mit einem Namen Ihrer Wahl, und wählen Sie im Bereich **Erweitert** einen Lizenzierungsmodus mit Fabric-Kapazitäten aus (*Testversion*, *Premium* oder *Fabric*).
-4. Wenn Ihr neuer Arbeitsbereich geöffnet wird, sollte er leer sein.
+1. Navigieren Sie in einem Browser unter `https://app.fabric.microsoft.com/home?experience=fabric` zur [Microsoft Fabric-Startseite](https://app.fabric.microsoft.com/home?experience=fabric) und melden Sie sich mit Ihren Fabric-Anmeldeinformationen an.
+1. Wählen Sie auf der Menüleiste auf der linken Seite **Arbeitsbereiche** aus (Symbol ähnelt &#128455;).
+1. Erstellen Sie einen neuen Arbeitsbereich mit einem Namen Ihrer Wahl, und wählen Sie einen Lizenzierungsmodus mit Fabric-Kapazitäten aus (*Testversion*, *Premium* oder *Fabric*).
+1. Wenn Ihr neuer Arbeitsbereich geöffnet wird, sollte er leer sein.
 
-    ![Screenshot: Leerer Arbeitsbereich in Power BI](./images/new-workspace.png)
-
-## Erstellen einer KQL-Datenbank
-
-Nachdem Sie nun über einen Arbeitsbereich verfügen, können Sie eine KQL-Datenbank erstellen, um Echtzeitdaten zu speichern.
-
-1. Wechseln Sie unten links im Portal zur Benutzeroberfläche **Echtzeitintelligenz**.
-
-    ![Screenshot: Menü zum Wechseln der Benutzeroberfläche.](./images/fabric-real-time.png)
-
-    Die Startseite von Echtzeitintelligenz enthält Kacheln zum Erstellen häufig verwendeter Ressourcen für die Analyse von Echtzeitdaten.
-
-2. Erstellen Sie auf der Startseite der Echtzeitintelligenz ein neues **Eventhouse** mit einem Namen Ihrer Wahl.
-
-    ![Screenshot des RTA-Editors mit hervorgehobener Option „KQL DB erstellen“](./images/create-kql-db.png)
-
-    Das Eventhouse wird verwendet, um Ihre Datenbanken in Projekten zu gruppieren und zu verwalten. Eine leere KQL-Datenbank wird automatisch mit dem Namen des Eventhouses erstellt. Wir fügen ihr später in dieser Übung Daten hinzu.
+    ![Screenshot eines leeren Arbeitsbereichs in Fabric](./images/new-workspace.png)
 
 ## Erstellen eines Ereignisstreams
 
-Ereignisstreams bieten eine skalierbare und flexible Möglichkeit zum Erfassen von Echtzeitdaten aus einer Streamingquelle.
+Jetzt können Sie Echtzeitdaten aus einer Streamingquelle suchen und erfassen. Sie beginnen im Fabric Echtzeit-Hub.
 
-1. Wählen Sie in der Menüleiste links die Seite **Start** für die Echtzeitintelligenz-Benutzeroberfläche aus.
-1. Wählen Sie auf der Startseite die Kachel aus, um einen neuen **Ereignisstream** mit einem Namen Ihrer Wahl zu erstellen.
+> **Tipp**: Wenn Sie den Echtzeit-Hub zum ersten Mal verwenden, werden möglicherweise einige *Tipps für die ersten Schritte* angezeigt. Sie können dies schließen.
 
-    Nach kurzer Zeit wird der visuelle Designer für Ihren Ereignisstream angezeigt.
+1. Wählen Sie in der Menüleiste auf der linken Seite den **Echtzeit-Hub** aus.
 
-    ![Screenshot: Ereignisstream-Designer.](./images/eventstream-designer.png)
+    Der Echtzeit-Hub bietet eine einfache Möglichkeit, Quellen von Streaming-Daten zu finden und zu verwalten.
 
-    Der Zeichenbereich des visuellen Designers zeigt eine Quelle, die eine Verbindung mit Ihrem Ereignisstream herstellt, der wiederum mit einem Ziel verbunden ist.
+    ![Screenshot des Echtzeit-Hubs in Fabric.](./images/real-time-hub.png)
 
-1. Wählen Sie auf dem Designer-Zeichenbereich in der Liste **Neue Quelle** als Quelle die Option **Beispieldaten** aus. Geben Sie dann im Bereich **Beispieldaten** den Namen **Taxis** an, und wählen Sie die **Yellow Taxi**-Beispieldaten aus (die von Taxifahrten erfassten Daten). Wählen Sie anschließend **Hinzufügen**.
-1. Wählen Sie unter dem Designer-Zeichenbereich die Registerkarte **Datenvorschau** aus, um eine Vorschau der aus der Quelle gestreamten Daten anzuzeigen:
+1. Wählen Sie im Echtzeit-Hub im Abschnitt **Verbinden mit** die Option **Datenquellen** aus.
+1. Suchen Sie die Beispieldatenquelle **Gelbes Taxi** und wählen Sie **Verbinden**. Benennen Sie dann im **Verbindungs**-Assistenten die Quelle als `taxi`, und bearbeiten Sie den Standard-Eventstreamnamen, um ihn in `taxi-data` zu ändern. Der Standard-Stream, der mit diesen Daten verbunden ist, wird automatisch *taxi-data-stream* genannt:
 
-    ![Screenshot: Ereignisstream-Datenvorschau.](./images/eventstream-preview.png)
+    ![Screenshot eines neuen Eventstreams.](./images/name-eventstream.png)
 
-1. Wählen Sie auf dem Designer-Zeichenbereich in der Liste **Neues Ziel** als Ziel die Option **KQL-Datenbank** aus. Geben Sie dann im Bereich **KQL-Datenbank** den Zielnamen **taxi-data** an, und wählen Sie Ihren Arbeitsbereich und Ihre KQL-Datenbank aus. Wählen Sie unter „Zieltabelle“ **Neu erstellen** aus, und geben Sie den Tabellennamen **taxi-data** ein. Wählen Sie dann **Hinzufügen** aus.
-1. Vergewissern Sie sich, dass Ihr abgeschlossener Ereignisstream wie folgt aussieht:
+1. Wählen Sie **Weiter** aus; warten Sie, bis der Quell- und Eventstream erstellt wurde, und wählen Sie dann **Eventstream öffnen** aus. Der Eventstream zeigt die **Taxi**-Quelle und den **taxi-data-stream** auf der Entwurfsfläche an:
 
-    ![Screenshot eines abgeschlossenen Ereignisstreams.](./images/complete-eventstream.png)
+   ![Screenshot des Eventstream-Canvas.](./images/new-taxi-stream.png)
 
-## Abfragen von Echtzeitdaten in einer KQL-Datenbank
+## Erstellen eines Eventhouses
 
-Ihr Ereignisstream füllt kontinuierlich eine Tabelle in Ihrer KQL-Datenbank auf, sodass Sie die Echtzeitdaten abfragen können.
+Der Eventstream erfasst die Echtzeit-Bestandsdaten, macht aber derzeit nichts damit. Erstellen wir ein Eventhouse, in dem die erfassten Daten in einer Tabelle gespeichert werden können.
 
-1. Wählen Sie im Menühub auf der linken Seite Ihre KQL-Datenbank aus (oder wählen Sie Ihren Arbeitsbereich aus, und suchen Sie dort Ihre KQL-Datenbank).
-1. Wählen Sie im Menü **...** für die Tabelle **taxi-data** (die von Ihrem Ereignisstream erstellt wurde) die Option **Abfragetabelle > Datensätze, die in den letzten 24 Stunden erfasst wurden** aus.
+1. Wählen Sie in der Menüleiste auf der linken Seite **Erstellen** aus. Wählen Sie auf der Seite *Neu* unter dem Abschnitt *Real-Time-Inteligence* die Option **Eventhouse** aus. Wählen Sie einen eindeutigen Namen Ihrer Wahl aus.
 
-    ![Screenshot: Menü „Abfragetabelle“ in einer KQL-Datenbank.](./images/kql-query.png)
+    >**Hinweis**: Wenn die Option **Erstellen** nicht an die Seitenleiste angeheftet ist, müssen Sie zuerst die Ellipses-Option (**…**) auswählen.
 
-1. Zeigen Sie die Ergebnisse der Abfrage an, bei der es sich um eine KQL-Abfrage wie folgt handelt:
+    Schließen Sie alle Tipps oder Aufforderungen, die angezeigt werden, bis Sie Ihr neues leeres Eventhouse sehen.
+
+    ![Screenshot eines neuen Eventhouse](./images/create-eventhouse.png)
+
+1. Beachten Sie im linken Bereich, dass Ihr Eventhouse eine KQL-Datenbank mit demselben Namen wie das Eventhouse enthält. Sie können in dieser Datenbank Tabellen für Ihre Echtzeitdaten anlegen oder bei Bedarf weitere Datenbanken erstellen.
+1. Wählen Sie die Datenbank aus und beachten Sie, dass es ein zugehöriges *Queryset* gibt. Diese Datei enthält einige KQL-Beispielabfragen, die Sie verwenden können, um mit der Abfrage der Tabellen in Ihrer Datenbank zu beginnen.
+
+    Allerdings gibt es derzeit keine Tabellen zum Abfragen. Dieses Problem lässt sich beheben, indem Daten aus dem Eventstream in einer neuen Tabelle gespeichert werden.
+
+1. Wählen Sie auf der Hauptseite Ihrer KQL-Datenbank **Daten abrufen**.
+1. Wählen Sie als Datenquelle **Eventstream** > **Vorhandener Eventstream**.
+1. Erstellen Sie im Bereich **Zieltabelle auswählen oder erstellen** eine neue Tabelle mit dem Namen `taxi`. Wählen Sie dann im Bereich **Datenquelle konfigurieren** Ihren Arbeitsbereich und den **taxi-data**-Eventstream aus und benennen Sie die Verbindung `taxi-table`.
+
+   ![Screenshot der Konfiguration zum Laden einer Tabelle aus einem Eventstream.](./images/configure-destination.png)
+
+1. Verwenden Sie die Schaltfläche **Weiter**, um die Schritte zum Überprüfen der Daten auszuführen und die Konfiguration dann abzuschließen. Schließen Sie dann das Konfigurationsfenster, um Ihr Eventhouse mit der Bestandstabelle anzuzeigen.
+
+   ![Screenshot von und Eventhouse mit einer Tabelle.](./images/eventhouse-with-table.png)
+
+    Die Verbindung zwischen dem Datenstrom und der Tabelle wurde erstellt. Überprüfen wir dies im Eventstream.
+
+1. Wählen Sie in der Menüleiste auf der linken Seite den **Echtzeit**-Hub aus und zeigen Sie dann die Seite **Meine Datenströme** an. Wählen Sie im Menü **…** für den **taxi-data-stream**-Stream die Option **Eventstream öffnen**.
+
+    Der Eventstream zeigt nun ein Ziel für den Datenstrom an:
+
+   ![Screenshot eines Eventstreams mit einem Ziel.](./images/eventstream-destination.png)
+
+    > **Tipp**: Wählen Sie das Ziel im Entwurfsbereich aus, und wenn darunter keine Datenvorschau angezeigt wird, wählen Sie **Aktualisieren** aus.
+
+    In dieser Übung haben Sie einen sehr einfachen Eventstream erstellt, der Echtzeitdaten erfasst und diese in eine Tabelle lädt. In einer echten Lösung würden Sie in der Regel Transformationen hinzufügen, um die Daten über Zeitfenster zu aggregieren (z. B. um den Durchschnittspreis jeder Aktie über Fünf-Minuten-Zeiträume zu erfassen).
+
+    Lassen Sie uns nun untersuchen, wie Sie die erfassten Daten abfragen und analysieren können.
+
+## Abfragen der erfassten Daten
+
+Der Eventstream erfasst die Taxitarifdaten in Echtzeit und lädt sie in eine Tabelle in Ihrer KQL-Datenbank. Sie können diese Tabelle abfragen, um die erfassten Daten zu sehen.
+
+1. Wählen Sie in der Menüleiste auf der linken Seite Ihre Eventhouse-Datenbank aus.
+1. Wählen Sie das *Queryset* für Ihre Datenbank.
+1. Ändern Sie im Abfragebereich die erste Beispielabfrage wie hier gezeigt:
 
     ```kql
-    ['taxi-data']
-    | where ingestion_time() between (now(-1d) .. now())
+    taxi
+    | take 100
     ```
 
-    Die Ergebnisse zeigen alle in den letzten 24 Stunden von der Streamingquelle erfassten Taxidatensätze an.
+1. Wählen Sie den Abfragecode aus und führen Sie ihn aus, um 100 Datenzeilen aus der Tabelle anzuzeigen.
 
-1. Ersetzen Sie den gesamten KQL-Abfragecode in der oberen Hälfte des Abfrage-Editors durch den folgenden Code:
+    ![Screenshot einer KQL-Abfrage.](./images/kql-stock-query.png)
+
+1. Überprüfen Sie die Ergebnisse und ändern Sie dann die Abfrage, um die Anzahl der Taxifahrten pro Stunde anzuzeigen:
 
     ```kql
-    // This query returns the number of taxi pickups per hour
-    ['taxi-data']
+    taxi
     | summarize PickupCount = count() by bin(todatetime(tpep_pickup_datetime), 1h)
     ```
 
-1. Verwenden Sie die Schaltfläche **&#9655; Ausführen**, um die Abfrage auszuführen und die Ergebnisse anzuzeigen, die die Anzahl der Taxifahrten für jede Stunde anzeigen.
+1. Markieren Sie die geänderte Abfrage und führen Sie sie aus, um die Ergebnisse zu sehen.
+1. Warten Sie ein paar Sekunden und führen Sie es erneut aus. Beachten Sie, dass sich die Anzahl der Abholungen ändert, wenn neue Daten aus dem Echtzeit-Stream zur Tabelle hinzugefügt werden.
 
 ## Bereinigen von Ressourcen
 
-Wenn Sie die Untersuchung von Echtzeitanalysen Microsoft Fabric abgeschlossen haben, können Sie den Arbeitsbereich löschen, den Sie für diese Übung erstellt haben.
+In dieser Übung haben Sie ein Eventhouse erstellt, Echtzeitdaten mithilfe eines Eventstreams erfasst, die erfassten Daten in einer KQL-Datenbanktabelle abgefragt, ein Echtzeit-Dashboard zur Visualisierung der Echtzeitdaten erstellt und eine Warnung mithilfe von Activator konfiguriert.
 
-1. Wählen Sie auf der Leiste auf der linken Seite das Symbol für Ihren Arbeitsbereich aus, um alle darin enthaltenen Elemente anzuzeigen.
-2. Wählen Sie im Menü **...** auf der Symbolleiste die **Arbeitsbereichseinstellungen** aus.
-3. Wählen Sie im Abschnitt **Andere** die Option **Diesen Arbeitsbereich entfernen** aus.
+Wenn Sie die Erkundung von Real-Time Intelligence in Fabric abgeschlossen haben, können Sie den für diese Übung erstellten Arbeitsbereich löschen.
+
+1. Wählen Sie auf der Leiste auf der linken Seite das Symbol für Ihren Arbeitsbereich aus.
+2. Wählen Sie in der Symbolleiste **Arbeitsbereichseinstellungen** aus.
+3. Wählen Sie im Abschnitt **Allgemein** die Option **Diesen Arbeitsbereich entfernen** aus.
