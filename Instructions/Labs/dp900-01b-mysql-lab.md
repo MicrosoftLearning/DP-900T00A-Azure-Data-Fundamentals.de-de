@@ -18,7 +18,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 In dieser Übung stellen Sie eine Azure Database for MySQL-Ressource bereit.
 
-1. Klicken Sie im Azure-Portal links oben auf **&#65291; Ressource erstellen**, und suchen Sie nach *Azure Database for MySQL*. Klicken Sie auf der angezeigten Seite **Azure Database for MySQL** auf **Erstellen**.
+1. Wählen Sie im Azure-Portal in der oberen linken Ecke die Option **&#65291; Ressource erstellen** und suchen Sie nach `Azure Database for MySQL`. Klicken Sie auf der angezeigten Seite **Azure Database for MySQL** auf **Erstellen**.
 
 1. Sehen Sie sich die verfügbaren Azure Database for MySQL-Optionen an. Wählen Sie dann als **Ressourcentyp** die Option **Flexibler Server** aus, und klicken Sie auf **Erstellen**.
 

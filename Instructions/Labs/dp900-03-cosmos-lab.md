@@ -17,9 +17,10 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 
 Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein Cosmos DB-Konto bereitstellen. In dieser Übung stellen Sie ein Cosmos DB-Konto bereit, für das Azure Cosmos DB for NoSQL verwendet wird.
 
-1. Wählen Sie oben links im Azure-Portal **+ Ressource erstellen** aus, und suchen Sie nach *Azure Cosmos DB*.  Wählen Sie in den Ergebnissen **Azure Cosmos DB** und dann **Erstellen** aus.
+1. Wählen Sie oben links im Azure-Portal **+ Erstellen einer Ressource** und suchen Sie nach `Azure Cosmos DB`.  Wählen Sie in den Ergebnissen **Azure Cosmos DB** und dann **Erstellen** aus.
 1. Wählen Sie in der **Azure Cosmos DB für NoSQL**-Kachel **Erstellen** aus.
 1. Geben Sie die folgenden Details ein, und wählen Sie **Überprüfen und erstellen** aus:
+    - **Workloadtyp**: Lernen
     - **Abonnement**: Wenn Sie eine Sandbox verwenden, wählen Sie die Option *Concierge-Abonnement* aus. Wenn Sie Ihr eigenes Azure-Abonnement verwenden, wählen Sie dieses aus.
     - **Ressourcengruppe**: Wenn Sie eine Sandbox verwenden, wählen Sie die vorhandene Ressourcengruppe aus (mit einem ähnlichen Namen wie *learn-xxxx....* ). Erstellen Sie andernfalls eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
     - **Kontoname**: Geben Sie einen eindeutigen Namen ein.
@@ -47,14 +48,14 @@ Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein
 1. Ändern Sie den JSON-Code für das neue Element wie folgt, und wählen Sie dann **Speichern** aus.
 
     ```json
-    {
-        "name": "Road Helmet,45",
-        "id": "123456789",
-        "categoryID": "123456789",
-        "SKU": "AB-1234-56",
-        "description": "The product called \"Road Helmet,45\" ",
-        "price": 48.74
-    }
+   {
+       "name": "Road Helmet,45",
+       "id": "123456789",
+       "categoryID": "123456789",
+       "SKU": "AB-1234-56",
+       "description": "The product called \"Road Helmet,45\" ",
+       "price": 48.74
+   }
     ```
 
 1. Nach dem Speichern des neuen Elements werden zusätzliche Metadateneigenschaften automatisch hinzugefügt.
@@ -67,9 +68,9 @@ Damit Sie Cosmos DB verwenden können, müssen Sie in Ihrem Azure-Abonnement ein
 1. Ändern Sie die Abfrage wie folgt:
 
     ```sql
-    SELECT *
-    FROM c
-    WHERE CONTAINS(c.name,"Helmet")
+   SELECT *
+   FROM c
+   WHERE CONTAINS(c.name,"Helmet")
     ```
 
 1. Verwenden Sie die Schaltfläche **Abfrage ausführen**, um die überarbeitete Abfrage auszuführen und die Ergebnisse zu überprüfen. Diese enthalten JSON-Entitäten für alle Elemente mit einem Feld **Name**, das den Text „Helmet“ enthält.

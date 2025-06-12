@@ -19,7 +19,7 @@ Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/free), in dem 
 Der erste Schritt bei der Verwendung von Azure Storage ist die Bereitstellung eines Azure Storage-Kontos in Ihrem Azure-Abonnement.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com?azure-portal=true) an, falls Sie dies noch nicht getan haben.
-1. Wählen Sie auf der Startseite des Azure-Portals links oben **&#65291; Ressource erstellen** aus, und suchen Sie nach *Speicherkonto*. Wählen Sie dann auf der resultierenden Seite **Speicherkonto** die Option **Erstellen** aus.
+1. Wählen Sie auf der Startseite des Azure-Portals in der oberen linken Ecke die Option **&#65291; Ressource erstellen** und suchen Sie nach `Storage account`. Wählen Sie dann auf der resultierenden Seite **Speicherkonto** die Option **Erstellen** aus.
 1. Geben Sie auf der Seite **Erstellen eines Speicherkontos** die folgenden Werte ein:
     - **Abonnement**: Wählen Sie Ihr Azure-Abonnement.
     - **Ressourcengruppe:** Erstellen Sie eine neue Ressourcengruppe mit einem Namen Ihrer Wahl.
@@ -42,19 +42,19 @@ Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Conta
     *Wenn die JSON-Datei in Ihrem Browser angezeigt wird, speichern Sie die Seite als **product1.json**.*
 
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
-1. Wählen Sie auf der Seite **Container** die Option **&#65291; Container** und fügen Sie einen neuen Container mit dem Namen **Daten** mit der anonymen Zugriffsebene **Privat (kein anonymer Zugriff)** hinzu.
+1. Wählen Sie auf der Seite **Container** die Option **&#65291; Container** aus und fügen Sie einen neuen Container mit dem Namen `data` und der anonymen Zugriffsebene **Privat (kein anonymer Zugriff)** hinzu.
 1. Wenn der Container **data** erstellt wurde, überprüfen Sie, ob er auf der Seite **Container** aufgeführt ist.
 1. Wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus. Diese Seite enthält eine browserbasierte Benutzeroberfläche, mit der Sie mit den Daten in Ihrem Speicherkonto arbeiten können.
 1. Wählen Sie auf der Seite des Speicherbrowsers **Blobcontainer** aus, und überprüfen Sie, ob Ihr Container **data** aufgeführt ist.
 1. Wählen Sie den Container **data** aus, und beachten Sie, dass er leer ist.
-1. Wählen Sie **&#65291; Verzeichnis hinzufügen** aus, und lesen Sie die Informationen zu Ordnern, bevor Sie ein neues Verzeichnis namens **products** erstellen.
+1. Wählen Sie **&#65291; Verzeichnis hinzufügen** und lesen Sie die Informationen zu Ordnern, bevor Sie einen neuen Ordner mit dem Namen `products` erstellen.
 1. Überprüfen Sie im Speicherbrowser, ob in der aktuellen Ansicht der Inhalt des soeben erstellten Ordners **products** angezeigt wird. Beachten Sie, dass die „Breadcrumbs“ oben auf der Seite den Pfad **Blobcontainer > data > products** widerspiegeln.
 1. Wählen Sie in den Breadcrumbs **Daten** aus, um zum Container **data** zu wechseln, und beachten Sie, dass er <u>keinen</u> Ordner namens **products** enthält.
 
     Ordner im Blobspeicher sind virtuell und nur als Teil des Pfads eines Blobs vorhanden. Da der Ordner **products** keine Blobs enthielt, ist er nicht wirklich vorhanden!
 
 1. Verwenden Sie die Schaltfläche **&#10514; Hochladen**, um den Bereich **Blob hochladen** zu öffnen.
-1. Wählen Sie im Bereich **Blob hochladen** die Datei **product1.json** aus, die Sie zuvor auf Ihrem lokalen Computer gespeichert haben. Geben Sie dann im Abschnitt **Erweitert** im Feld **In Ordner hochladen den Namen ****product_data** ein, und wählen Sie die Schaltfläche **Hochladen** aus.
+1. Wählen Sie im Bereich **Blob hochladen** die Datei **product1.json** aus, die Sie zuvor auf Ihrem lokalen Computer gespeichert haben. Geben Sie anschließend im Abschnitt **Erweitert** im Feld **In Ordner hochladen** den Wert `product_data` ein und wählen Sie die Schaltfläche **Hochladen**.
 1. Schließen Sie den Bereich **Blob hochladen**, wenn er noch geöffnet ist, und überprüfen Sie, ob ein virtueller Ordner **product_data** im Container **data** erstellt wurde.
 1. Wählen Sie den Ordner **product_data** aus, und vergewissern Sie sich, dass er das hochgeladene Blob **product1.json** enthält.
 1. Wählen Sie auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
@@ -84,8 +84,8 @@ Mit der Azure Data Lake Store Gen2-Unterstützung können Sie hierarchische Ordn
 Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Dateifreigaben** aus.
-1. Wählen Sie auf der Seite „Dateifreigaben“ die Option **&#65291; Dateifreigabe** aus, und fügen Sie mithilfe der Ebene **Transaktion optimiert** eine neue Dateifreigabe namens **files** hinzu.
-2. Wählen Sie **Weiter: Backup >** und deaktivieren Sie das Backup. Wählen Sie **dann "Überprüfen" und "Erstellen" aus**.
+1. Wählen Sie auf der Seite „Dateifreigaben“ die Option **&#65291; Dateifreigabe** aus und fügen Sie eine neue Dateifreigabe mit dem Namen `files` unter Verwendung der Stufe **Transaktionsoptimiert** hinzu.
+2. Wählen Sie **Weiter: Backup >** und deaktivieren Sie das Backup. Wählen Sie dann **Überprüfen und erstellen** aus.
 1. Öffnen Sie ihre neue Freigabe **files** in den **Dateifreigaben**.
 1. Wählen Sie oben auf der Seite **Verbinden** aus. Beachten Sie dann, dass der Bereich **Verbinden** Registerkarten für gängige Betriebssysteme (Windows, Linux und macOS) enthält, die Skripts enthalten, die Sie ausführen können, um von einem Clientcomputer aus eine Verbindung mit dem freigegebenen Ordner herzustellen.
 1. Schließen Sie den Bereich **Verbinden** und dann die Seite **files**, um zur Seite **Dateifreigaben** für Ihr Azure-Speicherkonto zurückzukehren.
@@ -95,7 +95,7 @@ Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 Azure Tables bietet einen Schlüssel-Wert-Speicher für Anwendungen, die Datenwerte speichern müssen, aber nicht die vollständige Funktionalität und Struktur einer relationalen Datenbank benötigen.
 
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Tabellen** aus.
-1. Wählen Sie auf der Seite **Tabellen** die Option **&#65291; Tabelle** aus, und erstellen Sie eine neue Tabelle mit dem Namen **products**.
+1. Wählen Sie auf der Seite **Tabellen** die Option **&#65291; Tabelle** und erstellen Sie eine neue Tabelle mit dem Namen `products`.
 1. Nachdem die Tabelle **products** erstellt wurde, wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus.
 1. Wählen Sie im Speicher-Explorer **Tabellen** aus, und überprüfen Sie, ob die Tabelle **products** aufgeführt ist.
 1. Wählen Sie die Tabelle **products** aus.
