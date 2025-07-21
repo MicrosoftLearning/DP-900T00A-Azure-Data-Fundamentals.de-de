@@ -44,11 +44,11 @@ Jetzt können Sie Echtzeitdaten aus einer Streamingquelle suchen und erfassen. S
 
    ![Screenshot des Eventstream-Canvas.](./images/new-taxi-stream.png)
 
-## Erstellen eines Eventhouses
+## Ein Eventhouse erstellen
 
 Der Eventstream erfasst die Echtzeit-Bestandsdaten, macht aber derzeit nichts damit. Erstellen wir ein Eventhouse, in dem die erfassten Daten in einer Tabelle gespeichert werden können.
 
-1. Wählen Sie in der Menüleiste auf der linken Seite **Erstellen** aus. Wählen Sie auf der Seite *Neu* unter dem Abschnitt *Real-Time-Inteligence* die Option **Eventhouse** aus. Wählen Sie einen eindeutigen Namen Ihrer Wahl aus.
+1. Wählen Sie in der Menüleiste auf der linken Seite **Erstellen** aus. Wählen Sie auf der Seite *Neu* unter dem Abschnitt *Echtzeitintelligenz* die Option **Eventhouse** aus. Wählen Sie einen eindeutigen Namen Ihrer Wahl aus.
 
     >**Hinweis**: Wenn die Option **Erstellen** nicht an die Seitenleiste angeheftet ist, müssen Sie zuerst die Ellipses-Option (**…**) auswählen.
 
