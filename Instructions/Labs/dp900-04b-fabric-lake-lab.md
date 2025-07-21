@@ -68,7 +68,7 @@ Eine einfache Möglichkeit zum Erfassen von Daten ist das Verwenden der Aktivit�
 
     ![Screenshot: Eine Pipeline mit der Aktivität „Daten kopieren“](./images/copy-data-pipeline.png)
 
-    Wenn die Pipeline gestartet wird, können Sie ihren Status im Bereich **Ausgabe** unter dem Pipeline-Designer überwachen. Verwenden Sie das Symbol **↻** (*Aktualisieren*), um den Status zu aktualisieren, und warten Sie, bis der Vorgang abgeschlossen ist (was 10 Minuten oder länger dauern kann).
+    Wenn die Pipeline gestartet wird, können Sie ihren Status im Bereich **Ausgabe** unter dem Pipeline-Designer überwachen. Verwenden Sie das Symbol **&#8635;** (*Aktualisieren*), um den Status zu aktualisieren, und warten Sie, bis der Vorgang abgeschlossen ist (was 10 Minuten oder länger dauern kann).
 
 1. Wählen Sie in der Hubmenüleiste auf der linken Seite Ihr Lakehouse aus.
 1. Wählen Sie auf der **Startseite** im Bereich **Lakehouse-Explorer** im Menü **...** für den Knoten **Tabellen** die Option **Aktualisieren** aus und erweitern Sie dann **Tabellen**, um zu überprüfen, ob die Tabelle **taxi_rides** erstellt worden ist.
