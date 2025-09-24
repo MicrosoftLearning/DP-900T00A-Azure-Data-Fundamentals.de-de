@@ -85,7 +85,7 @@ Azure Files bietet eine Möglichkeit, cloudbasierte Dateifreigaben zu erstellen.
 
 1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Dateifreigaben** aus.
 1. Wählen Sie auf der Seite „Dateifreigaben“ die Option **&#65291; Dateifreigabe** aus und fügen Sie eine neue Dateifreigabe mit dem Namen `files` unter Verwendung der Stufe **Transaktionsoptimiert** hinzu.
-2. Wählen Sie **Weiter: Backup >** und deaktivieren Sie das Backup. Wählen Sie dann **Überprüfen und erstellen** aus.
+2. Wählen Sie **Weiter: Backup >** und deaktivieren Sie das Backup. Wählen Sie dann **Überprüfen + erstellen** aus.
 1. Öffnen Sie ihre neue Freigabe **files** in den **Dateifreigaben**.
 1. Wählen Sie oben auf der Seite **Verbinden** aus. Beachten Sie dann, dass der Bereich **Verbinden** Registerkarten für gängige Betriebssysteme (Windows, Linux und macOS) enthält, die Skripts enthalten, die Sie ausführen können, um von einem Clientcomputer aus eine Verbindung mit dem freigegebenen Ordner herzustellen.
 1. Schließen Sie den Bereich **Verbinden** und dann die Seite **files**, um zur Seite **Dateifreigaben** für Ihr Azure-Speicherkonto zurückzukehren.
