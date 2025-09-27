@@ -35,7 +35,7 @@ Damit Sie Azure Synapse Analytics verwenden können, müssen Sie eine Azure Syna
         - Nordeuropa
         - USA Süd Mitte
         - Asien, Südosten
-        - UK, Süden
+        - Vereinigtes Königreich, Süden
         - Europa, Westen
         - USA (Westen)
         - USA, Westen 2
@@ -281,7 +281,7 @@ Während SQL eine gängige Sprache zum Abfragen strukturierter Datasets ist, fin
 
     | Category | count |
     | -- | -- |
-    | Lenkköpfe | 3 |
+    | Headsets | 3 |
     | Räder | 14 |
     | ... | ... |
 
