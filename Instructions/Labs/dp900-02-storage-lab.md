@@ -41,7 +41,7 @@ Der erste Schritt bei der Verwendung von Azure Storage ist die Bereitstellung ei
 
     > _**Tipp**: Eine neue Ressourcengruppe erleichtert die Bereinigung. Standard und LRS ist der Basisplan der niedrigsten Kosten, der für Lernen gut geeignet ist. LRS hält drei synchrone Kopien in einer Region, die für nicht kritische Demodaten geeignet sind, ohne für die Georeplikation zu bezahlen._
 
-1. Wählen Sie **Weiter: Erweitert >** aus, und zeigen Sie die Optionen der erweiterten Konfiguration an. Beachten Sie insbesondere, dass Sie hier den hierarchischen Namespace aktivieren können, um Azure Data Lake Storage Gen2 zu unterstützen. Lassen Sie diese Option **<u>deaktiviert</u>** (Sie aktivieren sie später), und wählen Sie dann **Weiter: Netzwerk >** aus, um die Netzwerkoptionen für Ihr Speicherkonto anzuzeigen.
+1. Wählen Sie **Weiter: Erweitert >** aus, und zeigen Sie die Optionen der erweiterten Konfiguration an. Beachten Sie insbesondere, dass Sie hier den hierarchischen Namespace aktivieren können, um Azure Data Lake Storage Gen2 zu unterstützen. Lassen Sie diese Option **<u>deaktivierten</u>** (Sie aktivieren sie später), und wählen Sie dann **Weiter: Netzwerk >** aus, um die Netzwerkoptionen für Ihr Speicherkonto anzuzeigen.
    
    ![Screenshot: Azure-Portal mit der zweiten Seite zum Erstellen eines Speicherkontos](images/storage-page2.png)
 
@@ -61,63 +61,63 @@ Nachdem Sie nun über ein Azure Storage-Konto verfügen, können Sie einen Conta
 
 1. Laden Sie die JSON-Datei [product1.json](https://aka.ms/product1.json?azure-portal=true) von `https://aka.ms/product1.json` herunter, und speichern Sie sie auf Ihrem Computer (Sie können sie in einem beliebigen Ordner speichern. Später laden Sie sie in Blobspeicher hoch).
 
-    *Wenn die JSON-Datei in Ihrem Browser angezeigt wird, speichern Sie die Seite als **product1.json**.*
+    *Wenn die JSON-Datei in Ihrem Browser angezeigt wird, klicken Sie mit der rechten Maustaste auf die Seite, und wählen Sie **Speichern unter** aus. Benennen Sie die Datei **product1.json**, und speichern Sie sie in Ihrem Ordner „Downloads“.* 
 
-1. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
+2. Wählen Sie auf der Azure-Portalseite für Ihren Speichercontainer auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
    
     ![Screenshot: Azure-Portal mit den Menüoptionen für ein Speicherkonto](images/storage-menu-containers.png)
 
-1. Wählen Sie auf der Seite **Container** die Option **&#65291; Container hinzufügen** aus und fügen Sie einen neuen Container mit dem Namen `data` und der anonymen Zugriffsebene **Privat (kein anonymer Zugriff)** hinzu.
+3. Wählen Sie auf der Seite **Container** die Option **&#65291; Container hinzufügen** aus und fügen Sie einen neuen Container mit dem Namen `data` und der anonymen Zugriffsebene **Privat (kein anonymer Zugriff)** hinzu.
 
     ![Screenshot: Azure-Portal mit einem neuen Container für ein Speicherkonto](images/storage-new-container.png)
 
     > _**Tipp**: Bei privatem Zugriff bleiben Ihre Beispieldaten sicher. Der öffentliche Zugriff ist nur selten erforderlich, außer bei statischen Website- oder offenen Datenszenarien. Wenn Sie dem Beispiel den Namen `data` geben, bleibt es einfach und lesbar._
 
-1. Wenn der Container **data** erstellt wurde, überprüfen Sie, ob er auf der Seite **Container** aufgeführt ist.
+4. Wenn der Container **data** erstellt wurde, überprüfen Sie, ob er auf der Seite **Container** aufgeführt ist.
 
-1. Wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus. Diese Seite enthält eine browserbasierte Benutzeroberfläche, mit der Sie mit den Daten in Ihrem Speicherkonto arbeiten können.
+5. Wählen Sie im Bereich auf der linken Seite im oberen Abschnitt **Speicherbrowser** aus. Diese Seite enthält eine browserbasierte Benutzeroberfläche, mit der Sie mit den Daten in Ihrem Speicherkonto arbeiten können.
 
-1. Wählen Sie auf der Seite des Speicherbrowsers **Blobcontainer** aus, und überprüfen Sie, ob Ihr Container **data** aufgeführt ist.
+6. Wählen Sie auf der Seite des Speicherbrowsers **Blobcontainer** aus, und überprüfen Sie, ob Ihr Container **data** aufgeführt ist.
 
-1. Wählen Sie den Container **data** aus, und beachten Sie, dass er leer ist.
+7. Wählen Sie den Container **data** aus, und beachten Sie, dass er leer ist.
 
     ![Screenshot: Azure-Portal mit dem Speicherbrowser](images/storage-browser-empty.png)
 
-1. Wählen Sie **&#65291; Verzeichnis hinzufügen** und lesen Sie die Informationen zu Ordnern, bevor Sie einen neuen Ordner mit dem Namen `products` erstellen.
+8. Wählen Sie **&#65291; Verzeichnis hinzufügen** und lesen Sie die Informationen zu Ordnern, bevor Sie einen neuen Ordner mit dem Namen `products` erstellen.
 
-1. Überprüfen Sie im Speicherbrowser, ob in der aktuellen Ansicht der Inhalt des soeben erstellten Ordners **products** angezeigt wird. Beachten Sie, dass die „Breadcrumbs“ oben auf der Seite den Pfad **Blobcontainer > data > products** widerspiegeln.
+9. Überprüfen Sie im Speicherbrowser, ob in der aktuellen Ansicht der Inhalt des soeben erstellten Ordners **products** angezeigt wird. Beachten Sie, dass die „Breadcrumbs“ oben auf der Seite den Pfad **Blobcontainer > data > products** widerspiegeln.
 
     ![Screenshot: Azure-Portal mit Speicherbrowser-Breadcrumb](images/storage-breadcrumb.png)
 
-1. Wählen Sie in den Breadcrumbs **Daten** aus, um zum Container **data** zu wechseln, und beachten Sie, dass er <u>keinen</u> Ordner namens **products** enthält.
+10. Wählen Sie in den Breadcrumbs **Daten** aus, um zum Container **data** zu wechseln, und beachten Sie, dass er <u>keinen</u> Ordner namens **products** enthält.
 
     Ordner im Blobspeicher sind virtuell und nur als Teil des Pfads eines Blobs vorhanden. Da der Ordner **products** keine Blobs enthielt, ist er nicht wirklich vorhanden!
 
     > _**Tipp**: Der flache Namespace bedeutet, dass Verzeichnisse nur Namenspräfixe (Produkte/file.json) sind. Dieses Design ermöglicht eine massive Skalierung, da der Dienst Blobnamen indiziert, anstatt eine echte Baumstruktur beizubehalten._
 
-1. Verwenden Sie die Schaltfläche **&#10514; Hochladen**, um den Bereich **Blob hochladen** zu öffnen.
+11. Verwenden Sie die Schaltfläche **&#10514; Hochladen**, um den Bereich **Blob hochladen** zu öffnen.
 
-1. Wählen Sie im Bereich **Blob hochladen** die Datei **product1.json** aus, die Sie zuvor auf Ihrem lokalen Computer gespeichert haben. Geben Sie anschließend im Abschnitt **Erweitert** im Feld **In Ordner hochladen** den Wert `product_data` ein und wählen Sie die Schaltfläche **Hochladen**.
+12. Wählen Sie im Bereich **Blob hochladen** die Datei **product1.json** aus, die Sie zuvor auf Ihrem lokalen Computer gespeichert haben. Geben Sie anschließend im Abschnitt **Erweitert** im Feld **In Ordner hochladen** den Wert `product_data` ein und wählen Sie die Schaltfläche **Hochladen**.
 
     ![Screenshot: Azure-Portal mit der Option zum Hochladen des Blobs](images/storage-upload-blob.png)
 
     > _**Tipp**: Durch das Angeben eines Ordnernamens beim Hochladen wird automatisch der virtuelle Pfad erstellt. Dies zeigt, dass durch das Vorhandensein eines Blobs der „Ordner“ angezeigt wird._
 
-1. Schließen Sie den Bereich **Blob hochladen**, wenn er noch geöffnet ist, und überprüfen Sie, ob ein virtueller Ordner **product_data** im Container **data** erstellt wurde.
+13. Schließen Sie den Bereich **Blob hochladen**, wenn er noch geöffnet ist, und überprüfen Sie, ob ein virtueller Ordner **product_data** im Container **data** erstellt wurde.
 
-1. Wählen Sie den Ordner **product_data** aus, und vergewissern Sie sich, dass er das hochgeladene Blob **product1.json** enthält.
+14. Wählen Sie den Ordner **product_data** aus, und vergewissern Sie sich, dass er das hochgeladene Blob **product1.json** enthält.
 
-1. Wählen Sie auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
+15. Wählen Sie auf der linken Seite im Abschnitt **Datenspeicher** die Option **Container** aus.
 
-1. Öffnen Sie den Container **data**, und überprüfen Sie, ob der Ordner **product_data** aufgeführt ist, den Sie erstellt haben.
+16. Öffnen Sie den Container **data**, und überprüfen Sie, ob der Ordner **product_data** aufgeführt ist, den Sie erstellt haben.
 
-1. Wählen Sie das Symbol **&#x2027;&#x2027;&#x2027;** am rechten Ende des Ordners aus, und beachten Sie, dass keine Optionen angezeigt werden. Ordner in einem flachen Namespaceblobcontainer sind virtuell und können nicht verwaltet werden.
+17. Wählen Sie am rechten Ende des Ordners das Symbol **&#x2027;&#x2027;&#x2027;** aus, und beachten Sie, dass im Menü nicht alle Optionen angezeigt werden. Ordner in einem flachen Namespaceblobcontainer sind virtuell und können nicht verwaltet werden.
 
     ![Screenshot: Azure-Portal mit den Optionen für den virtuellen Ordner](images/storage-virtual-folder.png)
 
     > _**Tipp**: Es ist kein echtes Verzeichnisobjekt vorhanden, daher gibt es keine Umbenennungs-/Berechtigungsvorgänge – diese erfordern einen hierarchischen Namespace._
 
-1. Verwenden Sie das Symbol **X** oben rechts auf der Seite **data**, um die Seite zu schließen und zur Seite **Container** zurückzukehren.
+18. Verwenden Sie das Symbol **X** oben rechts auf der Seite **data**, um die Seite zu schließen und zur Seite **Container** zurückzukehren.
 
 ## Erkunden von Azure Data Lake Storage Gen2
 
